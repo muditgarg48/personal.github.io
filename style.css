@@ -21,7 +21,7 @@ li a{
 }
  
 li{
-	padding: 20px 30px;
+	padding: 20px 50px;
 	padding-bottom: 10px;
 }
 
@@ -41,6 +41,8 @@ li a:hover{
 .nav{
 	list-style: none;
 	display: flex;
+	padding-left: 0px;
+	margin-right: 10px;
 }
 
 /*-------------------COVER---------------*/
