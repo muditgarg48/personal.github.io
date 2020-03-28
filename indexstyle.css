@@ -47,7 +47,7 @@ li a:hover{
 
 .current{
     background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 6px 7px 11px 0px black;
+    box-shadow: -3px 4px 7px 1px black
 }
 
 .current a:hover{
