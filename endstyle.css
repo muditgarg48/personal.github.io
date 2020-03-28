@@ -45,6 +45,11 @@ li a:hover{
 	margin-right: 10px;
 }
 
+.current{
+    background-color: black;
+    box-shadow: 6px 7px 11px 0px black
+}
+
 /*-------------------COVER---------------*/
 
 .warn{
