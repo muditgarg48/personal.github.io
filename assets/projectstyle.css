@@ -1,3 +1,7 @@
+body {
+	min-width: fit-content;
+}
+
 .myprojects{
 	width: 100%;
 	height: 100vh;
