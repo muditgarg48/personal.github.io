@@ -11,7 +11,7 @@
 	transform: scale(1.05);
 }
 
-li a{
+.top a{
 	font-size: 25px;
 	color: white;
 	font-family: "Sen";
@@ -23,12 +23,12 @@ li{
 	padding-bottom: 10px;
 }
 
-li a:hover{
+.top a:hover{
 	color: black;
 }
 
 .top{
-	margin-left: auto;
+	margin: auto;
 	transition: transform 0.5s;
 }
 
@@ -39,8 +39,8 @@ li a:hover{
 .nav{
 	list-style: none;
 	display: flex;
-	padding-left: 0px;
-	margin-right: 10px;
+	align-items: auto;
+	padding:0%;
 }
 
 .current{
