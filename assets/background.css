@@ -1,0 +1,9 @@
+body{
+	background: url(cover.jpg) no-repeat; 
+	background-size: cover;
+	margin: 0px;
+}
+
+*{
+	margin-top: 0px;
+}
