@@ -2,6 +2,10 @@ body {
 	min-width: fit-content;
 }
 
+a{
+	text-decoration: none;
+}
+
 /*Entrance snapshot*/
 /*===============================================*/
 
@@ -41,7 +45,7 @@ body {
 /*========================================================*/
 
 .section_head{
-	margin-top: 5%;
+	margin-bottom: 10%;
 	width: 100%;
 	font-family: "Hammersmith One";
 	align-items: center;
@@ -53,7 +57,7 @@ body {
 
 .heading{
 	text-align: center;
-	height: 30vh;
+	height: 20vh;
 	align-items: center;
 	font-size: 6em;
 }
@@ -104,25 +108,6 @@ body {
 
 #edu_tree li h1,h2,h3{
 	text-align: center;
-}
-
-#edu_tree::before {
-	position: absolute;
-	content: "";
-	width: 10px;
-	height: 100%;
-	background:rgba(0, 0, 0, 0.3);
-}
-
-#edu_tree li::before{
-	position: absolute;
-	content: "";
-	width: 2em;
-	height: 2em;
-	border-radius: 50%;
-	border-style: groove;
-	transform: translateX(-285%);
-	background:rgba(0, 0, 0, 1);
 }
 
 /*About Me*/
