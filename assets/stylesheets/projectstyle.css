@@ -1,0 +1,93 @@
+body {
+	min-width: fit-content;
+}
+
+a {
+	color: black;
+}
+
+.myprojects{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Hammersmith One";
+	color: black;
+	transition: all 0.25s;
+    flex-direction: column;
+}
+
+.txt{
+    transition: all 0.5s;
+    font-size: 4rem;
+	text-align: center;
+}
+
+.txt:hover{
+	transform: scale(1.3); 
+}
+
+.motto{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#quotes{
+    font-size: 6rem;
+    font-family: 'Secular One', sans-serif;
+}
+
+/*Each Project section design*/
+/*===============================================================*/
+
+.project_list{
+	display: flex;
+	flex-direction: column;
+	font-family: "Hammersmith One";
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	list-style: none;
+	padding-left: 0.1em;
+	width: 93%;
+}
+
+.project_list > li{
+	align-items: center;
+	margin: 2em;
+	width: 82%;
+	background-color: rgba(97, 145, 159, 0.8);
+	border-radius: 4em;	
+	box-shadow: -2px 1px 5px 4px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s;
+}
+
+.project_list > li:hover{
+	transform:scale(1.1);
+}
+
+.tech_used, .ppl_used {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*=======================================================*/
+
+.under_progress{
+	height: 3em;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 2em;
+	background-color: rgba(97, 145, 159, 0.9);
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.clickable_txt{
+	font-family: "Hammersmith One";
+	transition: all 0.5s;
+}
