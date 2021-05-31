@@ -87,16 +87,15 @@ a:hover{
 	display: flex;
 	list-style: none;	
 	text-align: center;
+	justify-content: center;
 }
 
 .topic_head{
-	font-size: 110%;
 	text-align: center;
 	text-decoration: underline;
 }
 
 .tree {
-	font-size: 110%;
 	list-style: lower-greek;
 	list-style-position: outside;
 }
