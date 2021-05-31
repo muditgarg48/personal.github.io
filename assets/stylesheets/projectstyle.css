@@ -51,6 +51,7 @@ a {
 	list-style: none;
 	padding-left: 0.1em;
 	width: 93%;
+	transform:translateX(3%);
 }
 
 .project_list > li{
