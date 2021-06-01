@@ -1,6 +1,13 @@
+/*Project 1 Style*/
+
+#p1:hover{
+    color: white;
+    background-color: rgba(97, 145, 159, 0.8);
+}
+
 /*Project 2 Style*/
 
 #p2:hover{
-    color: #2D2F31;
+    color: #0C63E4;
     background-color: #E7F1FF;
 }
