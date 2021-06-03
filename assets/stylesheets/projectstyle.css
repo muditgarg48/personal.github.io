@@ -2,6 +2,10 @@ body {
 	min-width: fit-content;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 a {
 	color: black;
 }
@@ -91,4 +95,12 @@ a {
 .clickable_txt{
 	font-family: "Hammersmith One";
 	transition: all 0.5s;
+}
+
+.myprojects > .txt > h1 > a{
+	text-decoration: none;
+}
+
+.myprojects > .txt > h1 > a:hover{
+	text-decoration: underline;
 }
