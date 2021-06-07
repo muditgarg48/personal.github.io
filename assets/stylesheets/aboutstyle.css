@@ -92,7 +92,7 @@ a:hover{
 
 .topic_head{
 	text-align: center;
-	text-decoration: underline;
+	text-decoration:overline underline;
 }
 
 .tree {
