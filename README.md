@@ -1,6 +1,6 @@
 # muditgarg48.github.io
 
-This is repository containing all the files that collectively run my website online for others to see at https://muditgarg.github.io
+This is repository containing all the files that collectively run my website online for others to see at https://muditgarg48.github.io
 Do visit if you have the time, this was my first ever project in the development field since college and the start of COVID-19 pandemic.
 
 The assets folder contains all the necessary files to make the website look pretty.
