@@ -13,10 +13,14 @@ a:hover{
 	text-decoration-color: black;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 /*Entrance snapshot*/
 /*===============================================*/
 
-.entrance{
+#entrance{
 	width: 100%;
 	height: 100vh;
 	display: flex;
