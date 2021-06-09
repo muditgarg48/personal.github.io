@@ -2,10 +2,6 @@ body {
 	min-width: fit-content;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
 a {
 	color: black;
 }
