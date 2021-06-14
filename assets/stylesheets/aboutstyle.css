@@ -1,5 +1,6 @@
 body {
 	min-width: fit-content;
+	padding-bottom: 7%;
 }
 
 a{
@@ -151,9 +152,9 @@ a:hover{
 	margin: 0;
 	padding: 0;
 	font-size: 2em;
-	background-color: rgba(97, 145, 159, 0.9);
 	align-items: center;
 	display: flex;
+	text-align: center;
 	justify-content: center;
 }
 

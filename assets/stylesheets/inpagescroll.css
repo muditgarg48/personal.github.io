@@ -2,19 +2,24 @@ html {
 	scroll-behavior: smooth;
 }
 
-#go_up{
-	background-color: rgba(97, 145, 159, 0.9);
+#left_nav, #right_nav, #go_up {
 	position: fixed;
+	transition: all 0.5s;
+}
+
+#left_nav:hover, #right_nav:hover, #go_up:hover{
+	transform:scale(1.5);
+}
+
+#go_up{
 	bottom: 5%;
-	right: 5%;
+	right: 49%;
 	border-radius: 100%;
-	padding: 1%;
+	padding: 10px;
 }
 
 #left_nav, #right_nav {
-	position: fixed;
 	top:50%;
-	transition: all 0.5s;
 }
 
 #left_nav{
@@ -23,8 +28,4 @@ html {
 
 #right_nav{
 	right:2%;
-}
-
-#left_nav:hover, #right_nav:hover{
-	transform:scale(1.5);
 }
