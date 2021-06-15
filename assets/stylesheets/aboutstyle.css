@@ -27,6 +27,7 @@ a:hover{
 	color: black;
 	transition: all 0.25s;
     flex-direction: column;
+	margin-bottom: 10%;
 }
 
 .heading_top{
@@ -65,14 +66,13 @@ a:hover{
 
 .heading{
 	text-align: center;
-	height: 2em;
+	height: 17vw;
 	align-items: center;
-	font-size: 6em;
 }
 
 #text{
 	transition: all 0.3s;
-    font-size: 2rem;
+    font-size: 3vw;
 	text-decoration: underline 0.11em rgb(0, 0, 0, 0);
 }
 
@@ -89,16 +89,20 @@ a:hover{
 	list-style: none;	
 	text-align: center;
 	justify-content: center;
+	padding-left: 0;
 }
 
 .topic_head{
 	text-align: center;
 	text-decoration:overline underline;
+	font-size: 1.3vw;
 }
 
 .tree {
-	list-style: lower-greek;
+	list-style: none;
 	list-style-position: outside;
+	text-align: center;
+	font-size: 1.1vw;
 }
 
 /*Education Tree*/
@@ -114,6 +118,7 @@ a:hover{
 	margin: 5%;
 	box-shadow: -2px 1px 5px 4px rgba(0, 0, 0, 0.3);
 	list-style: none;
+	font-size: 1vw;
 }
 
 #edu_tree li h1,h2,h3{

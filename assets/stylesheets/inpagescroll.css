@@ -16,6 +16,7 @@ html {
 	right: 49%;
 	border-radius: 100%;
 	padding: 10px;
+	background-color: rgba(97, 145, 159, 0.8);;
 }
 
 #left_nav, #right_nav {

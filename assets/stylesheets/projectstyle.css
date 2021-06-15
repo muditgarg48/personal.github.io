@@ -21,7 +21,7 @@ a {
 
 .txt{
     transition: all 0.5s;
-    font-size: 4rem;
+    font-size: 4.5vw;
 	text-align: center;
 }
 
@@ -63,6 +63,7 @@ a {
 	border-radius: 4em;	
 	box-shadow: -2px 1px 5px 4px rgba(0, 0, 0, 0.3);
 	transition: all 0.3s;
+	font-size: 1.3vw;
 }
 
 .project_list > li:hover{

@@ -2,7 +2,7 @@
     animation: typewriter 1.2s steps(1000) 1s normal both
   }
   @keyframes typewriter{
-    from{width: 25%;}
-    to{width: 80%;}
+    from{width: 10%;}
+    to{width: 50%;}
   }
 
