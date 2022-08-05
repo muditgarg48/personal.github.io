@@ -2,12 +2,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-#left_nav, #right_nav, #go_up {
-	position: fixed;
-	transition: all 0.5s;
-}
-
-#left_nav:hover, #right_nav:hover, #go_up:hover{
+#go_up:hover{
 	transform:scale(1.5);
 }
 
@@ -16,17 +11,7 @@ html {
 	right: 49%;
 	border-radius: 100%;
 	padding: 10px;
-	background-color: rgba(97, 145, 159, 0.8);;
-}
-
-#left_nav, #right_nav {
-	top:50%;
-}
-
-#left_nav{
-	left:2%;
-}
-
-#right_nav{
-	right:2%;
+	background-color: rgba(97, 145, 159, 0.8);
+	position: fixed;
+	transition: all 0.5s;
 }

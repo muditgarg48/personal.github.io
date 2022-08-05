@@ -59,7 +59,7 @@ a {
 	align-items: center;
 	margin: 2em;
 	width: 82%;
-	background-color: rgba(97, 145, 159, 0.8);
+	background-color: rgba(97, 145, 159, 1);
 	border-radius: 4em;	
 	box-shadow: -2px 1px 5px 4px rgba(0, 0, 0, 0.3);
 	transition: all 0.3s;
@@ -74,6 +74,15 @@ a {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.tech_used li {
+	border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0 2%;
+    cursor: pointer;
+    margin: 2px;
 }
 
 /*=======================================================*/
