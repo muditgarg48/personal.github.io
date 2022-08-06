@@ -60,7 +60,8 @@ a {
 	margin: 2em;
 	width: 82%;
 	background-color: rgba(97, 145, 159, 1);
-	border-radius: 4em;	
+	border-radius: 4em;
+	border-right: black 10px solid;
 	box-shadow: -2px 1px 5px 4px rgba(0, 0, 0, 0.3);
 	transition: all 0.3s;
 	font-size: 1.3vw;
@@ -68,21 +69,23 @@ a {
 
 .project_list > li:hover{
 	transform:scale(1.1);
+	border-right: black 20px double;
+	border-left: black 20px double;
 }
 
 .tech_used, .ppl_used {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
+	font-size: 1.3vw;
 }
 
 .tech_used li {
 	border-radius: 15px;
     border-style: solid;
-    border-width: 1px;
-    padding: 0 2%;
-    cursor: pointer;
-    margin: 2px;
+    border-width: 2px;
+    padding: 0 1%;
+    margin: 2px 1%;
 }
 
 /*=======================================================*/

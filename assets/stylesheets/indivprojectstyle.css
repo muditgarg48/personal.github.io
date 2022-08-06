@@ -1,22 +1,26 @@
 /*Project 1 Style*/
 
-#p1:hover{
-    color: white;
-    background-color: rgba(97, 145, 159, 0.8);
+#personal_website:hover{
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-right-color: black;
+    border-left-color: rgba(97, 145, 159, 0.8);
 }
 
 /*Project 2 Style*/
 
-#p2:hover{
-    color: #0C63E4;
-    background-color: #E7F1FF;
+#certificates_website:hover{
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-right-color: rgb(92, 200, 247);
+    border-left-color: rgb(7, 90, 156);
 }
 
 /*Project 3 Style*/
 
-#p3:hover{
-    color: white;
-    background-color: grey;
-    background-image: url("https://source.unsplash.com/random");
-    background-size: cover;
+#tinkercad_projects_website:hover{
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-right-color: #E7F1FF;
+    border-left-color: #0C63E4;
 }
