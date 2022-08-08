@@ -101,7 +101,7 @@ a:hover{
 .tree {
 	list-style: none;
 	list-style-position: outside;
-	text-align: center;
+	text-align: start;
 	font-size: 1.5vw;
 }
 
