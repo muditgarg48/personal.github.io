@@ -15,3 +15,17 @@ html {
 	position: fixed;
 	transition: all 0.5s;
 }
+
+#go_back:hover{
+	transform:scale(1.5);
+}
+
+#go_back{
+	top: 5%;
+	left: 1%;
+	border-radius: 100%;
+	padding: 10px;
+	background-color: rgba(97, 145, 159, 0.8);
+	position: fixed;
+	transition: all 0.5s;
+}
