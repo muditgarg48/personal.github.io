@@ -68,7 +68,7 @@ a {
 }
 
 .project_list > li:hover{
-	transform:scale(1.1);
+	/* transform:scale(1.1); */
 	border-right: black 20px double;
 	border-left: black 20px double;
 }
