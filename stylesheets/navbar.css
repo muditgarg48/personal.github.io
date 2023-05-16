@@ -4,7 +4,7 @@
 	position: fixed;
 	z-index: 1;
 	transition: transform 0.5s;
-	box-shadow: -3px 1px 7px 1px black;
+	/* box-shadow: -3px 0px 7px 1px black; */
 }
 
 .upper:hover{
