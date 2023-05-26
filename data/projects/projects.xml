@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./projects.xsl"?>
+
+<projects>
+    <project>
+        <name>Personal Website</name>
+        <link>http://muditgarg48.github.io</link>
+        <start>May '20</start>
+        <end>Present</end>
+        <description>My portfolio website</description>
+        <tech_used>
+            <tech>HTML</tech>
+            <tech>CSS</tech>
+            <tech>GitHub Pages</tech>
+            <tech>XML</tech>
+        </tech_used>
+        <people>
+            <person>Mudit Garg</person>
+        </people>
+        <colors>
+            <color_l>rgba(97, 145, 159, 0.8)</color_l>
+            <color_r>black</color_r>
+        </colors>
+    </project>
+    <project>
+        <name>My Certificates</name>
+        <link>http://muditgarg48.github.io/my_certificates_web</link>
+        <start>Aug '22</start>
+        <end>Present</end>
+        <description>A Flutter web App to showcase my certificates.</description>
+        <tech_used>
+            <tech>Flutter</tech>
+            <tech>Dart</tech>
+        </tech_used>
+        <people>
+            <person>Mudit Garg</person>
+        </people>
+        <colors>
+            <color_l>rgb(7, 90, 156)</color_l>
+            <color_r>rgb(92, 200, 247)</color_r>
+        </colors>
+    </project>
+    <project>
+        <name>TinkerCAD Projects</name>
+        <link>http://muditgarg48.github.io/tinkercad_projects</link>
+        <start>Jan '20</start>
+        <end>April '21</end>
+        <description>Display of projects from college involving the use of the TinkerCAD platform.</description>
+        <tech_used>
+            <tech>HTML</tech>
+            <tech>CSS</tech>
+            <tech>Bootstrap</tech>
+            <tech>TinkerCAD</tech>
+            <tech>Arduino</tech>
+        </tech_used>
+        <people>
+            <person>Mudit Garg</person>
+        </people>
+        <colors>
+            <color_l>#0C63E4</color_l>
+            <color_r>#E7F1FF</color_r>
+        </colors>
+    </project>
+</projects>
+
+<!-- <games>
+   <game>
+      <name>The Last of Us Part II</name>
+      <developer>Naughty Dog</developer>
+   </game>
+   <game>
+      <name>Ghost of Tsushima</name>
+      <developer>Sucker Punch Productions</developer>
+   </game>
+   <game>
+      <name>Death Stranding</name>
+      <developer>Kojima Productions</developer>
+   </game>
+</games> -->
