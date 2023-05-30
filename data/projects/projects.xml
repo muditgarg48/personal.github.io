@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="./projects.xsl"?>
+<?xml-stylesheet type="text/xsl" href="projects.xsl"?>
 
 <projects>
     <project>
@@ -8,36 +8,42 @@
         <start>May '20</start>
         <end>Present</end>
         <description>My portfolio website</description>
+        <github-repo>https://github.com/muditgarg48/muditgarg48.github.io</github-repo>
         <tech_used>
-            <tech>HTML</tech>
-            <tech>CSS</tech>
-            <tech>GitHub Pages</tech>
-            <tech>XML</tech>
+            <tech>
+                <name>
+                    HTML
+                </name>
+            </tech>
+            <tech>
+                <name>
+                    CSS
+                </name>
+            </tech>
+            <tech>
+                <name>
+                    GitHub Pages
+                </name>
+            </tech>
+            <tech>
+                <name>
+                    XML
+                </name>
+            </tech>
         </tech_used>
         <people>
-            <person>Mudit Garg</person>
+            <person>
+                <name>
+                    Mudit Garg
+                </name>
+                <link>
+                    https://github.com/muditgarg48
+                </link>
+            </person>
         </people>
         <colors>
             <color_l>rgba(97, 145, 159, 0.8)</color_l>
             <color_r>black</color_r>
-        </colors>
-    </project>
-    <project>
-        <name>My Certificates</name>
-        <link>http://muditgarg48.github.io/my_certificates_web</link>
-        <start>Aug '22</start>
-        <end>Present</end>
-        <description>A Flutter web App to showcase my certificates.</description>
-        <tech_used>
-            <tech>Flutter</tech>
-            <tech>Dart</tech>
-        </tech_used>
-        <people>
-            <person>Mudit Garg</person>
-        </people>
-        <colors>
-            <color_l>rgb(7, 90, 156)</color_l>
-            <color_r>rgb(92, 200, 247)</color_r>
         </colors>
     </project>
     <project>
@@ -46,34 +52,130 @@
         <start>Jan '20</start>
         <end>April '21</end>
         <description>Display of projects from college involving the use of the TinkerCAD platform.</description>
+        <github-repo>https://github.com/muditgarg48/tinkercad_projects</github-repo>
         <tech_used>
-            <tech>HTML</tech>
-            <tech>CSS</tech>
-            <tech>Bootstrap</tech>
-            <tech>TinkerCAD</tech>
-            <tech>Arduino</tech>
+            <tech>
+                <name>
+                    HTML
+                </name>
+            </tech>
+            <tech>
+                <name>
+                    CSS
+                </name>
+            </tech>
+            <tech>
+                <name>
+                    Bootstrap
+                </name>
+            </tech>
+            <tech>
+                <name>
+                    TinkerCAD
+                </name>
+            </tech>
+            <tech>
+                <name>
+                    Arduino
+                </name>
+            </tech>
         </tech_used>
         <people>
-            <person>Mudit Garg</person>
+            <person>
+                <name>
+                    Mudit Garg
+                </name>
+                <link>
+                    https://github.com/muditgarg48
+                </link>
+            </person>
         </people>
         <colors>
             <color_l>#0C63E4</color_l>
             <color_r>#E7F1FF</color_r>
         </colors>
     </project>
+    <project>
+        <name>My Certificates</name>
+        <link>http://muditgarg48.github.io/my_certificates_web</link>
+        <start>Aug '22</start>
+        <end>Present</end>
+        <description>A Flutter web App to showcase my certificates.</description>
+        <github-repo>https://github.com/muditgarg48/my_certificates_web</github-repo>
+        <tech_used>
+            <tech>
+                <name>
+                    Flutter
+                </name>
+            </tech>
+            <tech>
+                <name>
+                    Dart
+                </name>
+            </tech>
+        </tech_used>
+        <people>
+            <person>
+                <name>
+                    Mudit Garg
+                </name>
+                <link>
+                    https://github.com/muditgarg48
+                </link>
+            </person>
+        </people>
+        <colors>
+            <color_l>rgb(7, 90, 156)</color_l>
+            <color_r>rgb(92, 200, 247)</color_r>
+        </colors>
+    </project>
+    <project>
+        <name>Weather App</name>
+        <link>https://github.com/muditgarg48/weather_bucket</link>
+        <start>Oct '22</start>
+        <end>Nov '22</end>
+        <description>Weather app that utilizes the OpenWeather API to display weather and pollution data for every hour over the next 4 days.</description>
+        <github-repo>https://github.com/muditgarg48/weather_bucket</github-repo>
+        <tech_used>
+            <tech>
+                <name>
+                    Vue.js
+                </name>
+            </tech>
+            <tech>
+                <name>
+                    Node.js
+                </name>
+            </tech>
+            <tech>
+                <name>
+                    HTML
+                </name>
+            </tech>
+            <tech>
+                <name>
+                    CSS
+                </name>
+            </tech>
+            <tech>
+                <name>
+                    Javascript
+                </name>
+            </tech>
+        </tech_used>
+        <people>
+            <person>
+                <name>
+                    Mudit Garg
+                </name>
+                <link>
+                    https://github.com/muditgarg48
+                </link>
+            </person>
+        </people>
+        <colors>
+            <color_l>rgb(178, 118, 130)</color_l>
+            <color_r>rgb(140, 143, 196)</color_r>
+        </colors>
+    </project>
 </projects>
-
-<!-- <games>
-   <game>
-      <name>The Last of Us Part II</name>
-      <developer>Naughty Dog</developer>
-   </game>
-   <game>
-      <name>Ghost of Tsushima</name>
-      <developer>Sucker Punch Productions</developer>
-   </game>
-   <game>
-      <name>Death Stranding</name>
-      <developer>Kojima Productions</developer>
-   </game>
-</games> -->

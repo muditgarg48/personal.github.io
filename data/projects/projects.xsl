@@ -4,13 +4,11 @@
     <html>
         <head>
             <title>Project Report</title>
-            <!-- <script src="../js/xml_extractor.js"></script> -->
             <link rel="stylesheet" type="text/css" href="../../stylesheets/projectstyle.css"/>
             <link rel="stylesheet" type="text/css" href="../../stylesheets/navbar.css"/>
             <link rel="stylesheet" type="text/css" href="../../stylesheets/background.css"/>
             <link rel="stylesheet" type="text/css" href="../../stylesheets/scrollbar.css"/>
             <link rel="stylesheet" type="text/css" href="../../stylesheets/inpagescroll.css"/>
-            <link rel="stylesheet" type="text/css" href="../../stylesheets/indivprojectstyle.css"/>
             <script src="../../js/loading.js"></script>
             <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Spicy+Rice|Sen|Secular+One" rel="stylesheet"/>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -27,11 +25,11 @@
         
             <div class="upper">
                 <ul class="nav">
-                    <li class="top"><a href="../index.html">Home</a></li>
-                    <li class="top"><a href="about.html">About</a></li>
-                    <li class="top"><a href="my_certificates.html">Certificates</a></li>
-                    <li class="top current"><a href="projects.html">Projects</a></li>
-                    <li class="top"><a href="contact.html">Contact</a></li>
+                    <li class="top"><a href="../../index.html">Home</a></li>
+                    <li class="top"><a href="../../pages/about.html">About</a></li>
+                    <li class="top"><a href="../../pages/my_certificates.html">Certificates</a></li>
+                    <li class="top current"><a href="">Projects</a></li>
+                    <li class="top"><a href="../../pages/contact.html">Contact</a></li>
                 </ul>
             </div>
         
@@ -48,16 +46,41 @@
             <div class="project">
                 <ul class="project_list" id="project_list">
                     <xsl:for-each select="projects/project">
-                        <li id="personal_website">
+                        <li>
+                            <xsl:attribute name="style">
+                                '
+                                border-right-color:
+                                    <xsl:value-of select="colors/color_r"/>;
+                                border-left-color:
+                                    <xsl:value-of select="colors/color_l"/>;
+                                background: rgba(0,0,0,0.2);
+                                backdrop-filter: saturate(180%) blur(10px);'
+                            </xsl:attribute>
                             <div class="time">
                                 <span class="material-symbols-rounded">calendar_month</span>
                                 <h4><xsl:value-of select="start"/> - <xsl:value-of select="end"/></h4>
                             </div>
                             <div class="title">
-                                <a href="">
-                                    <h1>
-                                        <xsl:value-of select="name"/>
-                                    </h1>
+                                <h1>
+                                    <xsl:value-of select="name"/>
+                                </h1>
+                            </div>
+                            <div class="links">
+                                <a>
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="github-repo"/>
+                                    </xsl:attribute>
+                                    <h3>
+                                        GitHub
+                                    </h3>
+                                </a>
+                                <a>
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="link"/>
+                                    </xsl:attribute>
+                                    <h3>
+                                        Demo
+                                    </h3>
                                 </a>
                             </div>
                             <div class="desc">
@@ -65,11 +88,13 @@
                             </div>
                             <span class="material-symbols-rounded">(handyman)</span>
                             <em>Technologies used:</em> 
-                            <ul class="tech_used">
+                            <ul class="tech_used">   
                                 <xsl:for-each select="tech_used">
-                                    <li>
-                                        <xsl:value-of select="tech"/>
-                                    </li>
+                                    <xsl:for-each select="tech">
+                                        <li>
+                                            <xsl:value-of select="name"/>
+                                        </li>
+                                    </xsl:for-each>
                                 </xsl:for-each>
                             </ul>
                             <br/>
@@ -78,7 +103,12 @@
                             <ul class="ppl_used">
                                 <xsl:for-each select="people">
                                     <li>
-                                        <xsl:value-of select="person"/>
+                                        <a>
+                                            <xsl:attribute name="href">
+                                                <xsl:value-of select="person/link"/>
+                                            </xsl:attribute>
+                                            <xsl:value-of select="person/name"/>
+                                        </a>
                                     </li>
                                 </xsl:for-each>
                             </ul>
