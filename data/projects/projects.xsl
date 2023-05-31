@@ -10,6 +10,7 @@
             <link rel="stylesheet" type="text/css" href="../../stylesheets/scrollbar.css"/>
             <link rel="stylesheet" type="text/css" href="../../stylesheets/inpagescroll.css"/>
             <script src="../../js/loading.js"></script>
+          	<meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
             <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Spicy+Rice|Sen|Secular+One" rel="stylesheet"/>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         </head>
