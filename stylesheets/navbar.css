@@ -1,8 +1,8 @@
 #navbar{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 1%;
+    justify-content: space-between;
+    padding: .5%;
     position: fixed;
     width: 100%;
     backdrop-filter: blur(6.2px);
@@ -11,6 +11,7 @@
 }
 
 #website_logo {
+    padding-left: 1%;
     font-size: 5vh;
     font-weight: 1000;
 }
