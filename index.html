@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Welcome</title>
-	<link rel="stylesheet" type="text/css" href="stylesheets/navbar.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/indexstyle.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/background.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/scrollbar.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/inpagescroll.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/typing_animation.css">
-	<script src="js/loading.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Spicy+Rice|KoHo|Sen&display=swap" rel="stylesheet">
-	
-</head>
-<body>
-	
-	<div class="loading" style="background-color: rgba(97, 145, 159, 0.8);height: 100vh; width: 100%; display:flex; flex-direction: column;">
-		<div style="padding-left: 30%;">
-			<img src="assets/images/loading.gif">
-		</div>
-		<br>
-		<h1 class="loading_txt" style="text-align: center; font-family: 'Hammersmith One';">LOADING ... </h1>
-	</div>
+    <head>
+        <title>Welcome</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="./stylesheets/style.css">
+        <link rel="stylesheet" href="./stylesheets/navbar.css">
+        <link rel="stylesheet" href="./stylesheets/scrollbar.css">
+        <link rel="stylesheet" href="./stylesheets/footer.css">
+        <script src="progressbar.js"></script>
+    </head>
+    <body>
+        <div id="scroll-progress"></div>
+        <div id="navbar">
+            <div id="website_logo">
+                <span id="highlight">M</span>udit<span id="highlight">.</span>
+            </div>
+            <ul id="navlist">
+                <li><a href="#"><span id="highlight">01.</span>Home</a></li>
+                <li><a href="#about"><span id="highlight">02.</span>About</a></li>
+                <li><a href="#history"><span id="highlight">03.</span>History</a></li>
+                <li><a href="#certificates"><span id="highlight">04.</span>Certificates</a></li>
+                <li><a href="#projects"><span id="highlight">05.</span>Projects</a></li>
+                <li id="resume"><a href="./assets/files/resume.pdf">Resume</a></li>
+            </ul>
+        </div>
+        <div class="section" id="home">
 
-	<div class="upper">
-		<ul class="nav">
-			<li class="top current"><a href="./index.html">Home</a></li>
-			<li class="top"><a href="pages/about.html">About</a></li>
-			<li class="top"><a href="pages/my_certificates.html">Certificates</a></li>
-			<li class="top"><a href="pages/projects.html">Projects</a></li>
-			<li class="top"><a href="pages/contact.html">Contact</a></li>
-		</ul>
-	</div>
-
-	<div class="welcome">
-		<div class="txt type_writer">
-			<span id="hello">HELLO !!</span><br>
-			This is <span id="name">MUDIT GARG</span><br>
-			Have you met me ?
-		</div>
-	</div>
-
-</body>
+        </div>
+        <div class="section" id="about">
+            About
+        </div>
+        <div class="section" id="history">
+            History
+        </div>
+        <div class="section" id="certificates">
+            Certificates
+        </div>
+        <div class="section" id="projects">
+            Projects
+        </div>
+        <div id="contact">
+            <a href="mailto:gargmu@tcd.ie"><span>gargmu@tcd.ie</span></a>
+            <div id="line"></div>
+            <a href="https://www.linkedin.com/in/muditgarg48"><img src="./assets/icons/linkedin.svg"></a>
+            <a href="https://www.instagram.com/mudit137"><img src="./assets/icons/instagram.svg"></a>
+            <a href="https://www.github.com/muditgarg48"><img src="./assets/icons/github.svg"></a>
+        </div>
+    </body>
 </html>
