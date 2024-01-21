@@ -4,10 +4,14 @@
     font-family: 'Roboto Mono';
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #scroll-progress {
     position: fixed;
     top: 0;
-    width: 0%;
+    width: 0;
     height: 3px;
     background: #00abf0;
     z-index: 10000;
@@ -23,11 +27,11 @@ body {
     color: white;
     font-size: large;
     transition: 1s;
+    
 }
 
-.section {
-    height: 100vh;
-    width: 100%;
-    text-align: center; 
-    /* padding-top: 15vh; */
+.horizontal_line {
+    width: 20%;
+    height: 0;
+    border: 1px solid #00abf0;
 }

@@ -3,19 +3,18 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    backdrop-filter: blur(4.2px);
-    -webkit-backdrop-filter: blur(4.2px);
     color: white;
     text-align: center;
-    padding: 0.5% 0 0.5% 0;
     display: flex;
     justify-content: end;
     align-items: center;
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
 }
 
 #contact a {
     margin: .25% 1.5%;
-    /* align-self: center; */
+    padding: 0.5%;
 }
 
 #contact img:hover {
@@ -27,11 +26,4 @@
 #contact span:hover {
     color: #00abf0;
     transition: ease-out 1s;
-}
-
-#line {
-    /* align-self: center; */
-    width: 20%;
-    height: 0;
-    border: 1px solid #00abf0;
 }
