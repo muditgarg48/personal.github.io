@@ -1,3 +1,10 @@
+/* for horizontal scrolling
+#website_content {
+    width: auto;
+    display: flex;
+    overflow-x: scroll;
+} */
+
 .section {
     height: 50vw;
     width: auto;
