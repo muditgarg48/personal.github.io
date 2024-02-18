@@ -20,7 +20,7 @@ body::-webkit-scrollbar-thumb
 
 /* === Disable Scrollbar === */
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
 }
 
