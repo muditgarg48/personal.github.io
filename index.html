@@ -3,36 +3,50 @@
     <head>
         <title>Welcome</title>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono" rel="stylesheet">
+        
+        <!-- Element CSS -->
         <link rel="stylesheet" href="./stylesheets/index.css">
         <link rel="stylesheet" href="./stylesheets/navbar.css">
-        <link rel="stylesheet" href="./stylesheets/page_sections.css">
         <link rel="stylesheet" href="./stylesheets/scrollbar.css">
-        <link rel="stylesheet" href="./stylesheets/footer.css">
         <link rel="stylesheet" href="./stylesheets/button.css">
+        <link rel="stylesheet" href="./stylesheets/page_sections.css">
+
+        <!-- Section CSS -->
+        <link rel="stylesheet" href="./stylesheets/about_section.css">
+        <link rel="stylesheet" href="./stylesheets/home_section.css">
+        <link rel="stylesheet" href="./stylesheets/footer.css">
         <script src="js/progressbar.js"></script>
     </head>
     <body>
         <div id="scroll-progress"></div>
         <div id="navbar">
             <div id="website_logo">
-                <span id="highlight">M</span>udit<span id="highlight">.</span>
+                <span class="highlight_text">M</span>udit<span class="highlight_text">.</span>
             </div>
             <ul id="navlist">
                 <li><a href="#">Home</a></li>
-                <li><a href="#about"><span id="highlight">01.</span>About</a></li>
-                <li><a href="#history"><span id="highlight">02.</span>History</a></li>
-                <li><a href="#certificates"><span id="highlight">03.</span>Certificates</a></li>
-                <li><a href="#projects"><span id="highlight">04.</span>Projects</a></li>
+                <li><a href="#about"><span class="highlight_text">01.</span>About</a></li>
+                <li><a href="#history"><span class="highlight_text">02.</span>History</a></li>
+                <li><a href="#certificates"><span class="highlight_text">03.</span>Certificates</a></li>
+                <li><a href="#projects"><span class="highlight_text">04.</span>Projects</a></li>
             </ul>
         </div>
         <div id="website_content">
             <div class="section" id="home">
+                <div>
+                    <div class="highlight_text">Hello, I am</div>
+                    <div id="name">Mudit Garg.</div>
+                    <div id="headline">I build software solutions as projects.</div>
+                    <div id="one_liner">
+                        I am a software engineer with a specialization in developing applications tailored to address specific challenges and contribute to enhancing overall quality of life.
+                    </div>
+                </div>
                 <img src="https://img.freepik.com/free-photo/beautiful-milky-way-night-sky_53876-139825.jpg?size=626&ext=jpg">
             </div>
             <div class="section towards_left" id="about">
                 <div class="section_head">
                     <div class="section_heading">
-                        <span id="highlight">01.</span> About
+                        <span class="highlight_text">01.</span> About
                     </div>
                     <div class="horizontal_line"></div>
                 </div>
@@ -44,7 +58,7 @@
                 <div class="section_head">
                     <div class="horizontal_line"></div>
                     <div class="section_heading">
-                        <span id="highlight">02.</span> History
+                        <span class="highlight_text">02.</span> History
                     </div>
                 </div>
                 <div class="section_body">
@@ -54,7 +68,7 @@
             <div class="section towards_left" id="certificates">
                 <div class="section_head">
                     <div class="section_heading">
-                        <span id="highlight">03.</span> Certificates
+                        <span class="highlight_text">03.</span> Certificates
                     </div>
                     <div class="horizontal_line"></div>
                 </div>
@@ -66,7 +80,7 @@
                 <div class="section_head">
                     <div class="horizontal_line"></div>
                     <div class="section_heading">
-                        <span id="highlight">04.</span> Projects
+                        <span class="highlight_text">04.</span> Projects
                     </div>
                 </div>
                 <div class="section_body">

@@ -1,0 +1,23 @@
+#home {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+}
+
+#home * {
+    padding: 2%;
+}
+
+#name, #headline {
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+#headline {
+    font-size: 2.5vw;
+    color: rgba(255,255,255,0.6);
+}
+
+#one_liner {
+    font-size: 1vw;
+}

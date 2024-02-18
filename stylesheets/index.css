@@ -29,8 +29,14 @@ body {
     transition: 1s;
 }
 
+/* Common CSS classes */
+
 .horizontal_line {
     width: 20%;
     height: 0;
     border: 0.5px solid #00abf0;
+}
+
+.highlight_text{
+    color: #00abf0;
 }

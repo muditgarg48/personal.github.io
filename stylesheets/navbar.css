@@ -18,12 +18,8 @@
     font-family: 'Pacifico';
 }
 
-#website_logo #highlight {
+#website_logo .highlight_text {
     font-family: 'Pacifico';
-}
-
-#highlight{
-    color: #00abf0;
 }
 
 #navlist li{
