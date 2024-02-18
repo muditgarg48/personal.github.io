@@ -34,8 +34,3 @@ body {
     height: 0;
     border: 0.5px solid #00abf0;
 }
-
-.fill_animation:hover {
-    --p: 100%;
-    --t: .5s;
-}
