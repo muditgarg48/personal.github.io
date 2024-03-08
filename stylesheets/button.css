@@ -1,4 +1,4 @@
-.fill_animation:hover {
+/* .fill_animation:hover {
     --p: 100%;
     --t: .5s;
 }
@@ -6,7 +6,7 @@
 .button {
     padding: 4px 10px 4px 10px;
     border: 1px solid #00abf0;
-    border-radius: 5px;
+    border-radius: 15px;
     background: linear-gradient(#00abf0 0 0) no-repeat
     calc(200% - var(--p,0%)) 100% / 200% var(--p,.08em);
     transition: .3s var(--t,0s), background-position .3s calc(.3s - var(--t,0s));
@@ -15,4 +15,70 @@
 .button a:hover {
     color: black;
     transition:2s;
+} */
+
+.button {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #090909;
+    font-weight: bolder;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border-radius: 17px;
+    box-shadow: -1px -1px 3px #0c82b0;
+}
+
+.button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #00abf0;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button:hover {
+    color: #ffffff;
+    border: 1px solid #00abf0;
+}
+
+.button:hover:before {
+    top: -35%;
+    background-color: #00abf0;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+    top: -45%;
+    background-color: #00abf0;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }

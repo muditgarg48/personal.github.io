@@ -6,11 +6,16 @@
 
 #home * {
     padding: 2%;
+    font-family: 'Major Mono Display'
 }
 
 #name, #headline {
     font-size: 4vw;
     font-weight: bold;
+}
+
+#name {
+    letter-spacing: 0.4vw;
 }
 
 #headline {
@@ -20,4 +25,11 @@
 
 #one_liner {
     font-size: 1vw;
+}
+
+#home img {
+    padding: 0;
+    width: 45vw;
+    border-bottom: 2px solid #00abf0;
+    border-radius: 50px;
 }

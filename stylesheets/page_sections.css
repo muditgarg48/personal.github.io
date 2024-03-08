@@ -41,3 +41,7 @@
     padding: 1%;
     margin-bottom: 1%;
 }
+
+.section_head * {
+    font-family: 'Major Mono Display';
+}

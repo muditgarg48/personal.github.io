@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome</title>
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono" rel="stylesheet">
+        <title>Mudit Garg</title>
         
         <!-- Element CSS -->
         <link rel="stylesheet" href="./stylesheets/index.css">
+        <link rel="stylesheet" href="./stylesheets/button.css">
         <link rel="stylesheet" href="./stylesheets/navbar.css">
         <link rel="stylesheet" href="./stylesheets/scrollbar.css">
-        <link rel="stylesheet" href="./stylesheets/button.css">
         <link rel="stylesheet" href="./stylesheets/page_sections.css">
+        <link rel="stylesheet" href="./stylesheets/type_writer_animation.css">
+        <link rel="stylesheet" href="./stylesheets/background.css">
 
         <!-- Section CSS -->
-        <link rel="stylesheet" href="./stylesheets/about_section.css">
         <link rel="stylesheet" href="./stylesheets/home_section.css">
+        <link rel="stylesheet" href="./stylesheets/about_section.css">
+        <link rel="stylesheet" href="./stylesheets/project_section.css">
         <link rel="stylesheet" href="./stylesheets/footer.css">
         <script src="js/progressbar.js"></script>
     </head>
@@ -27,21 +29,22 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#about"><span class="highlight_text">01.</span>About</a></li>
                 <li><a href="#history"><span class="highlight_text">02.</span>History</a></li>
-                <li><a href="#certificates"><span class="highlight_text">03.</span>Certificates</a></li>
-                <li><a href="#projects"><span class="highlight_text">04.</span>Projects</a></li>
+                <li><a href="#projects"><span class="highlight_text">03.</span>Projects</a></li>
+                <li><a href="#certificates"><span class="highlight_text">04.</span>Certificates</a></li>
             </ul>
         </div>
         <div id="website_content">
             <div class="section" id="home">
+                <!-- <img src="./assets/imgs/mypic-nobg.png"> -->
                 <div>
                     <div class="highlight_text">Hello, I am</div>
                     <div id="name">Mudit Garg.</div>
                     <div id="headline">I build software solutions as projects.</div>
-                    <div id="one_liner">
-                        I am a software engineer with a specialization in developing applications tailored to address specific challenges and contribute to enhancing overall quality of life.
+                    <div id="one_liner" class="type_writer">
+                        A software engineer with a specialization in developing product focused applications tailored to address specific challenges and make life simpler.
                     </div>
                 </div>
-                <img src="https://img.freepik.com/free-photo/beautiful-milky-way-night-sky_53876-139825.jpg?size=626&ext=jpg">
+                <img src="./assets/imgs/metoo.jpg">
             </div>
             <div class="section towards_left" id="about">
                 <div class="section_head">
@@ -65,22 +68,85 @@
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </div>
             </div>
-            <div class="section towards_left" id="certificates">
+            <div class="section towards_left" id="projects">
                 <div class="section_head">
                     <div class="section_heading">
-                        <span class="highlight_text">03.</span> Certificates
+                        <span class="highlight_text">03.</span> Projects
                     </div>
                     <div class="horizontal_line"></div>
                 </div>
                 <div class="section_body">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    <div class="individual_project">
+                        <h2 class="title">Personal Project</h2>
+                        <h6 class="description">
+                            My personal website
+                        </h6>
+                        <ul class="tech_used">
+                            <!-- html -->
+                            <img src="https://camo.githubusercontent.com/7dde8da81212fbf7b9018760a7d44c9c8f7aad8f995bbfd51968165b87f913c9/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f68746d6c352f68746d6c352d6f726967696e616c2d776f72646d61726b2e737667" height="40" width="40">
+                            <!-- css -->
+                            <img src="https://camo.githubusercontent.com/cd402acee67bfaf3560634ed1b236cb3d330dcee7f0b5aec2ad98c435e852c7b/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f637373332f637373332d6f726967696e616c2d776f72646d61726b2e737667" height="40" width="40">
+                            <!-- js -->
+                            <img src="https://camo.githubusercontent.com/16bbe3c62e06c0099a8bd86816b7993b3eb49d8cd21eb74c7bff7db7dc3787b7/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6a6176617363726970742f6a6176617363726970742d6f726967696e616c2e737667" height="40" width="40">
+                            <!-- github -->
+                            <img src="https://camo.githubusercontent.com/38827655e1ae0e1518d635ad89e8aa46b7f977c795952245c36a2d58064f1803/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f64657669636f6e732f64657669636f6e2f69636f6e732f6769742f6769742d6f726967696e616c2e737667" height="40" width="40">
+                        </ul>
+                        <div class="link_buttons">
+                            <div class="github button fill_animation">
+                                <a href="https://github.com/muditgarg48/muditgarg48.github.io">Source Code</a>
+                            </div>
+                            <div class="visit button fill_animation">
+                                <a href="https://muditgarg48.github.io">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="individual_project">
+                        <h2 class="title">My Certificates</h2>
+                        <h6 class="description">
+                            A Flutter web App to showcase my certificates.
+                        </h6>
+                        <ul class="tech_used">
+                            <li>Flutter</li>
+                            <li>Dart</li>
+                            <li>Git</li>
+                        </ul>
+                        <div class="link_buttons">
+                            <div class="github button fill_animation">
+                                <a href="https://github.com/muditgarg48/my_certificates">Source Code</a>
+                            </div>
+                            <div class="visit button fill_animation">
+                                <a href="http://muditgarg48.github.io/my_certificates_web">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="individual_project">
+                        <h2 class="title">My TinkedCAD Workshop</h2>
+                        <h6 class="description">
+                            Display of projects from college involving the use of the TinkerCAD platform.
+                        </h6>
+                        <ul class="tech_used">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>TinkerCAD</li>
+                            <li>Arduino</li>
+                        </ul>
+                        <div class="link_buttons">
+                            <div class="github button fill_animation">
+                                <a href="https://github.com/muditgarg48/my_certificates">Source Code</a>
+                            </div>
+                            <div class="visit button fill_animation">
+                                <a href="http://muditgarg48.github.io/my_certificates_web">Visit</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="section towards_right" id="projects">
+            <div class="section towards_right" id="certificates">
                 <div class="section_head">
                     <div class="horizontal_line"></div>
                     <div class="section_heading">
-                        <span class="highlight_text">04.</span> Projects
+                        <span class="highlight_text">04.</span> Certificates
                     </div>
                 </div>
                 <div class="section_body">
@@ -95,7 +161,7 @@
             <a href="https://www.instagram.com/mudit137"><img src="./assets/icons/instagram.svg"></a>
             <a href="https://www.github.com/muditgarg48"><img src="./assets/icons/github.svg"></a>
             &nbsp;
-            <div class="button fill_animation"><a href="./assets/files/resume.pdf">Resume</a></div>
+            <div class="button"><a href="./assets/files/resume.pdf">Resume</a></div>
             &nbsp;
         </div>
     </body>
