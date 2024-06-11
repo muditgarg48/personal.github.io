@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Mono';
     /* font-family: 'Major Mono Display' */
+    font-family: 'Montserrat';
 }
 
 html {
