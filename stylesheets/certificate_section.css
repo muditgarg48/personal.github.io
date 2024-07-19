@@ -94,3 +94,29 @@
     background-color: #081b29;
     color: white;
 }
+
+#years {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.year {
+    width: max-content;
+    text-decoration: line-through;
+    padding: 4px 10px;
+    margin: 2px 5px;
+    border: 1px solid #00abf0;
+    border-radius: 15px;
+    background-color: #081b29;
+    color: white;
+    cursor: url('../assets/icons/pointer.png'), auto;
+}
+
+.year:hover {
+    
+}
+
+.activeYear {
+    text-decoration: none;
+}

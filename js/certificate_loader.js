@@ -3,12 +3,50 @@ function formatDate(dateString) {
     return new Date(dateString).toLocaleDateString('en-US', options);
 }
 
+function sortCertificatesByDate(certificates) {
+    return certificates.sort((a, b) => new Date(b.date) - new Date(a.date));
+}
+
+function getAllYears(certificates) {
+    const years = new Set();
+    certificates.forEach(cert => {
+        const year = new Date(cert.date).getFullYear();
+        years.add(year);
+    });
+    return Array.from(years);
+}
+
+function toggleCertificatesByYear(year, yearElement) {
+    const certs = document.querySelectorAll(`.year-${year}`);
+    const isActive = yearElement.classList.toggle('activeYear');
+    certs.forEach(cert => {
+        cert.style.display = isActive ? 'flex' : 'none';
+    });
+}
+
 function displayCertificates (certificates) {
     const container = document.getElementById('certificates-container');
+    certificates = sortCertificatesByDate(certificates);
+
+    const years = getAllYears(certificates);
+
+    const yearsElement = document.createElement('div')
+    yearsElement.id = 'years';
+
+    years.forEach(year => {
+        const yearElement = document.createElement('div');
+        yearElement.className = 'year button activeYear';
+        yearElement.textContent = year;
+        yearsElement.appendChild(yearElement);
+        yearElement.addEventListener('click', () => {
+            toggleCertificatesByYear(year, yearElement);
+        });
+    });
+    container.appendChild(yearsElement);
 
     certificates.forEach(cert => {
         const certElement = document.createElement('div');
-        certElement.className = 'certificate';
+        certElement.className = `certificate year-${new Date(cert.date).getFullYear()}`;
         
         const certThumbnail = document.createElement('iframe');
         certThumbnail.className = 'certificate-thumbnail';
