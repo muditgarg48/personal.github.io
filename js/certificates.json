@@ -10,7 +10,7 @@
             "JP Morgan Chase"
         ],
         "date": "2020-05-04",
-        "cert_id": "xHXobkaGMrhrFY8S9",
+        "cert_id": "DKNBFdSY4L6QNFWBP",
         "other_keywords":[]
     },
     {
@@ -187,6 +187,49 @@
         ],
         "date": "2021-03-03",
         "cert_id": "1xrtg8lQmT",
+        "other_keywords":[]
+    },
+    {
+        "name":"Career Essentials in Generative AI",
+        "file_name": "Career Essentials in Generative AI by Microsoft and LinkedIn.pdf",
+        "cat": [
+            "Linkedin Learning",
+            "Generative AI"
+        ],
+        "issuing_auth": [
+            "Microsoft",
+            "LinkedIn Learning"
+        ],
+        "date": "2024-06-17",
+        "cert_id": " 2dfa3b0a230fefcc1c470164b1919e4265d98a97477fcd7c5bed0d37505629ee",
+        "other_keywords":[]
+    },
+    {
+        "name":"Accenture Development & Advanced Engineering Job Simulation",
+        "file_name": "Accenture North America Coding Development & Advanced Engineering Job Simulation.pdf",
+        "cat": [
+            "Virtual Internship"
+        ],
+        "issuing_auth": [
+            "The Forage",
+            "Accenture"
+        ],
+        "date": "2024-06-13",
+        "cert_id": "ZxiNmHBGWokfHSwzF",
+        "other_keywords":[]
+    },
+    {
+        "name":"OCI Generative AI Certification",
+        "file_name": "OCI Generative AI Certification.pdf",
+        "cat": [
+            "Online Course",
+            "Generative AI"
+        ],
+        "issuing_auth": [
+            "Oracle University"
+        ],
+        "date": "2024-07-23",
+        "cert_id": "312795178OCI2024GAIOCP",
         "other_keywords":[]
     }
 ]
