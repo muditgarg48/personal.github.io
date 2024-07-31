@@ -27,8 +27,8 @@ const WelcomeSection = () => {
 
     const linkedin_icon = require('../../assets/icons/linkedin.json');
     const instagram_icon = require('../../assets/icons/instagram.json');
-    const gmail_icon = require('../../assets/icons/gmail2.json');
-    const github_icon = require('../../assets/icons/github2.json');
+    const gmail_icon = require('../../assets/icons/gmail.json');
+    const github_icon = require('../../assets/icons/github.json');
     const scroll_icon = require('../../assets/icons/scroll.json')
 
     return (
