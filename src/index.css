@@ -1,0 +1,40 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono');
+
+:root {
+  
+  --primary-color: #00abf0;
+  --secondary-color: #00acf0b4;
+  --bg-color: #081b29;
+
+  --font-primary-color: var(--primary-color);
+  --font-secondary-color: var(--secondary-color);
+  --font-style: "Montserrat", sans-serif;
+  --logo-font-style: "Pacifico";
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-style);
+  background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar {
+  width: 0.3vw;
+  height: 0.3vh;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  transition: all 1.1s;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  transform: scale(1.1);
+}

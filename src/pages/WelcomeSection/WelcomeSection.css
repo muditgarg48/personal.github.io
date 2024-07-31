@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AR:wght@100..400&display=swap');
+
+#welcome-section {
+    height: 90vh;
+    width: 89.5vw;
+    color: var(--font-primary-color);
+
+    font-size: 1rem;
+    text-wrap: pretty;
+    padding: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-evenly;
+}
+/* 
+#intro {
+    height: 100%;
+} */
+
+.hello {
+    color: yellow;
+    font-family: "Playwrite AR", cursive;
+}
+
+#name {
+    font-size: 2rem;
+}
+
+#brief {
+    font-size: 1.5rem;
+    color: var(--font-secondary-color);
+}
+
+#summary {
+    color: var(--font-secondary-color);
+}
+
+#contact {
+    display: flex;
+}
+
+#contact_icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#scroll_down {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#scroll_down:hover {
+    text-decoration: underline;
+}
+
+#placeholder_div {
+    width: 30vw;
+}

@@ -1,0 +1,43 @@
+#navbar{
+    top:0;
+    display: flex;
+    align-items: center;
+    padding: .5%;
+    position: fixed;
+    width: 90%;
+    margin: 0 5%;
+    z-index: 1000;
+    transition: all 1s;
+}
+
+#website_logo {
+    flex: 2;
+    font-size: 2.5rem;
+    font-weight: 1000;
+    font-family: var(--logo-font-style);
+    color: white;
+}
+
+.highlight_text {
+    color: var(--font-primary-color);
+}
+
+#navlist {
+    flex: 8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navlistItem {
+    color: white;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.activeTab {
+    background-color: var(--primary-color);
+    /* color: black; */
+    border-radius: 7rem;
+    padding: 0.2rem 0.5rem;
+}
