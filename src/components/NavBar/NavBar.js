@@ -2,8 +2,8 @@ import React from "react";
 import './NavBar.css';
 import AnimatedIcon from "../../components/AnimatedIcon/AnimatedIcon";
 import { Link } from "react-scroll";
-import { RotatingText } from 'rotating-text'
-import 'rotating-text/dist/index.css'
+import { RotatingText } from 'rotating-text';
+import 'rotating-text/dist/index.css';
 
 const NavBar =  () => {
 

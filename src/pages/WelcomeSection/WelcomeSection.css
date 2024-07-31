@@ -46,6 +46,18 @@
     justify-content: space-evenly;
 }
 
+#resume_btn {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    padding: 0 .4rem;
+    border: 1px solid var(--font-primary-color);
+    background-color: var(--font-primary-color);
+    color: black;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
 #scroll_down {
     font-size: 1rem;
     display: flex;
