@@ -111,10 +111,11 @@
     background-color: #081b29;
     color: white;
     cursor: url('../assets/icons/pointer.png'), auto;
+    transition: all 0.5s;
 }
 
 .year:hover {
-    
+    transform: translateY(-10%);
 }
 
 .activeYear {

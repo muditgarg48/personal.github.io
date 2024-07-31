@@ -1,0 +1,7 @@
+#about {
+    text-align: start;
+}
+
+#about * {
+    font-family: 'Major Mono Display'
+}
