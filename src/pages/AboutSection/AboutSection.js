@@ -5,7 +5,6 @@ import Marquee from "react-fast-marquee";
 
 import ScrollFurther from "../../components/ScrollFurther/ScrollFurther";
 import myself from '../../assets/imgs/myself.jpg';
-import react_icon from '../../assets/imgs/react.svg';
 import skills from '../../assets/data/skills.js';
 
 const AboutSection = () => {
@@ -42,33 +41,40 @@ const AboutSection = () => {
                     </div>
                 </div>
                 &nbsp;
-                <div id="skills-subsection">
-                    {/* <div class="subsection-heading">
-                        My Skillset
-                    </div> */}
-                    <SkillSubSection
-                        id="lang-skills"
-                        section_name="Programming Languages"
-                        dir="left"/> 
-                    <SkillSubSection
-                        id="web-dev-skills"
-                        section_name="Web Development"
-                        dir="right"/>
-                    <SkillSubSection
-                        id="mobile-dev-skills"
-                        section_name="Mobile Development"
-                        dir="left"/>
-                    <SkillSubSection
-                        id="tools-skills"
-                        section_name="Tools and Libraries"
-                        dir="right"/>
-                    <SkillSubSection
-                        id="ide-skills"
-                        section_name="Integrated Development Environments (IDE)"
-                        dir="left"/>
-                </div>
+                <SkillSection/>
+                &nbsp;
                 <ScrollFurther next="experience-section" side="right"/>
             </div>
+        </div>
+    );
+}
+
+const SkillSection = () => {
+    return (
+        <div id="skills-subsection">
+            {/* <div class="subsection-heading">
+                My Skillset
+            </div> */}
+            <SkillSubSection
+                id="lang-skills"
+                section_name="Programming Languages"
+                dir="left"/> 
+            <SkillSubSection
+                id="web-dev-skills"
+                section_name="Web Development"
+                dir="right"/>
+            <SkillSubSection
+                id="mobile-dev-skills"
+                section_name="Mobile Development"
+                dir="left"/>
+            <SkillSubSection
+                id="tools-skills"
+                section_name="Tools and Libraries"
+                dir="right"/>
+            <SkillSubSection
+                id="ide-skills"
+                section_name="Integrated Development Environments (IDE)"
+                dir="left"/>
         </div>
     );
 }
