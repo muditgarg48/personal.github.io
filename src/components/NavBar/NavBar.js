@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import './NavBar.css';
 import AnimatedIcon from "../../components/AnimatedIcon/AnimatedIcon";
 import { Link } from "react-scroll";
@@ -44,10 +44,6 @@ const NavBar =  () => {
 const SideNavBar = ({children}) => {
     
     const [sideBarIsOpen, setSideBarIsOpen] = useState(false);
-
-    useEffect(() => {
-        console.log(sideBarIsOpen);
-    },[sideBarIsOpen]);
 
     if(!sideBarIsOpen) {
         return (
