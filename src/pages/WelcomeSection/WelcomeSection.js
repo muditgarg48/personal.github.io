@@ -3,36 +3,15 @@ import './WelcomeSection.css';
 import my_resume from '../../assets/pdfs/My Resume.pdf';
 import { TypeAnimation } from 'react-type-animation';
 import AnimatedIcon from "../../components/AnimatedIcon/AnimatedIcon";
-import { Link } from "react-scroll";
+import ScrollFurther from "../../components/ScrollFurther/ScrollFurther";
+import hello_sequence from "../../assets/data/differentHellos";
 
 const WelcomeSection = () => {
-
-    const hello_sequence = [
-        'Hello!',
-        1000,
-        'नमस्ते!',
-        1000,
-        '¡Hola!',
-        1000,
-        'Bonjour!',
-        1000,
-        '你好!',
-        1000,
-        'Привет!',
-        1000,
-        'Dia dhuit!',
-        1000,
-        'Ciao!',
-        1000,
-        'Halò!',
-        1000,
-    ];
 
     const linkedin_icon = require('../../assets/icons/linkedin.json');
     const instagram_icon = require('../../assets/icons/instagram.json');
     const gmail_icon = require('../../assets/icons/gmail.json');
     const github_icon = require('../../assets/icons/github.json');
-    const scroll_icon = require('../../assets/icons/scroll.json');
     const resume_icon = require('../../assets/icons/resume.json');
 
     return (
@@ -66,13 +45,7 @@ const WelcomeSection = () => {
                 </div>
             </div>
             &nbsp;
-            <div id="scroll_down">
-                <Link to="about-section" smooth={true} duration={500}>
-                    <AnimatedIcon icon={scroll_icon} class_name="nocss" icon_size={50}/>
-                </Link>
-                &nbsp;
-                Scroll Down to explore further
-            </div>
+            <ScrollFurther next="about-section"/>
         </div>
     );
 }

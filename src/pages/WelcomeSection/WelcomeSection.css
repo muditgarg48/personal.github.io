@@ -4,10 +4,10 @@
     height: 90vh;
     width: 89.5vw;
     color: var(--font-primary-color);
+    padding: 5vw;
 
     font-size: 1rem;
     text-wrap: pretty;
-    padding: 5vw;
     margin-right: 5vw;
     display: flex;
     flex-direction: column;
@@ -56,18 +56,4 @@
     color: black;
     font-weight: bolder;
     border-radius: 20px;
-}
-
-#scroll_down {
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-}
-
-#scroll_down:hover {
-    text-decoration: underline;
-}
-
-#placeholder_div {
-    width: 30vw;
 }

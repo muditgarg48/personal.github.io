@@ -10,6 +10,7 @@
 
   --font-primary-color: var(--primary-color);
   --font-secondary-color: var(--secondary-color);
+  --font-highlight-color: white;
   --font-style: "Montserrat", sans-serif;
   --logo-font-style: "Pacifico";
 }
@@ -37,4 +38,8 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   transform: scale(1.1);
+}
+
+.highlight {
+  color: var(--font-highlight-color);
 }
