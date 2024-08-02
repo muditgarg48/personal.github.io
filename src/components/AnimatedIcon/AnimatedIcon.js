@@ -11,7 +11,7 @@ const AnimatedIcon = ({class_name="contact_icon", icon, link='', icon_size=30}) 
     }
 
     return (
-        <a href={link} onMouseEnter={playIcon} className={class_name}>
+        <a href={link} onMouseEnter={playIcon} className={class_name} target="_blank" rel="noreferrer">
             <Player ref={playerRef} size={icon_size} icon={icon}/>
         </a>
     )
