@@ -5,6 +5,7 @@ import AboutSection from './pages/AboutSection/AboutSection';
 import ExperienceSection from './pages/ExperienceSection/ExperienceSection';
 import ProjectsSection from './pages/ProjectsSection/ProjectsSection';
 import CertificatesSection from './pages/CertificatesSection/CertificatesSection';
+import Footer from './pages/Footer/Footer';
 import { Fade } from "react-awesome-reveal";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <ExperienceSection/>
         <ProjectsSection/>
         <CertificatesSection/>
+        <Footer/>
       </Fade>
       {/* <Fade direction="left" triggerOnce fraction={0.3}>
       </Fade>

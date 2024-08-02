@@ -1,0 +1,20 @@
+import React from 'react';
+import './Footer.css';
+
+function Footer() {
+  return (
+    <div style={{display: "flex", justifyContent: "center"}}>
+        <div id="footer">
+            Powered By
+            <hr id="footer-divider"/>
+            <div id="footer-icons">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"/>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export default Footer;
