@@ -7,6 +7,7 @@ import 'rotating-text/dist/index.css'
 import { Divide as Hamburger } from 'hamburger-react'
 import { motion } from 'framer-motion';
 import { useWindowSize } from "@uidotdev/usehooks";
+import WebsiteLogo from "../WebsiteLogo/WebsiteLogo";
 
 const NavBar =  () => {
 
@@ -76,9 +77,7 @@ const FullScreenNavigation = ({navscreenState, setNavscreenState, children}) => 
             transition={{duration: 5, delay: 0.5, ease: "linear" }}
         >
             <div id="full-screen-navscreen-top">
-                <div id="website_logo">
-                    <span className="highlight_text">M</span>udit<span className="highlight_text">.</span>
-                </div>
+                <WebsiteLogo/>
                 <div id="hamburger-icon">
                     <Hamburger 
                         color="#00abf0" 
@@ -98,9 +97,7 @@ const FullScreenNavigation = ({navscreenState, setNavscreenState, children}) => 
 const TopNavBar = ({children}) => {
     return (
         <div id="navbar">
-            <div id="website_logo">
-                <span className="highlight_text">M</span>udit<span className="highlight_text">.</span>
-            </div>
+            <WebsiteLogo/>
             <div id="navlist-full">
                 {children}
             </div>

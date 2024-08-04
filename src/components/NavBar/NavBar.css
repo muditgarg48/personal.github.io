@@ -12,18 +12,6 @@
     -webkit-backdrop-filter: blur(6.2px);
 }
 
-#website_logo {
-    flex: 2;
-    font-size: 2.5rem;
-    font-weight: 1000;
-    font-family: var(--logo-font-style);
-    color: var(--font-highlight-color);
-}
-
-.highlight_text {
-    color: var(--font-primary-color);
-}
-
 #navlist-side {
     flex: 1;
     display: flex;
