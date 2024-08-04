@@ -35,12 +35,24 @@
     border-radius: 5rem;
 }
 
+@media (max-width: 800px) {
+    #myself-subsection {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #my-potrait {
+        width: 80vw;
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 #my-quote {
     display: flex;
-    justify-content: center;
-    align-items: baseline;
+    justify-content: space-evenly;
+    align-items: center;
     font-family: 'Passion One';
 }
 
