@@ -1,5 +1,5 @@
 #footer {
-    color: white;
+    color: var(--font-highlight-color);
     background-color: var(--secondary-color);
     width: fit-content;
     padding: 1rem;

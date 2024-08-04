@@ -17,7 +17,7 @@
     font-size: 2.5rem;
     font-weight: 1000;
     font-family: var(--logo-font-style);
-    color: white;
+    color: var(--font-highlight-color);
 }
 
 .highlight_text {
@@ -38,7 +38,7 @@
 }
 
 .navlistItem {
-    color: white;
+    color: var(--font-highlight-color);
     cursor: pointer;
     pointer-events: auto;
     display: flex;

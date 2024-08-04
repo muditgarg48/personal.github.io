@@ -50,6 +50,7 @@
 
 #quotation-mark {
     font-size: 7rem;
+    color: var(--font-highlight-color);
 }
 
 #quote {
