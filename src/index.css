@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono');
 
+@font-face {
+  font-family: 'Carpenter';
+  src: url('../src/assets/fonts/Carpenter/Carpenter-Regular.eot');
+  src: local('Carpenter Regular'), local('Carpenter-Regular'),
+      url('../src/assets/fonts/Carpenter/Carpenter-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../src/assets/fonts/Carpenter/Carpenter-Regular.woff2') format('woff2'),
+      url('../src/assets/fonts/Carpenter/Carpenter-Regular.woff') format('woff'),
+      url('../src/assets/fonts/Carpenter/Carpenter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   
   --primary-color: #00abf0;
@@ -13,6 +26,7 @@
   --font-highlight-color: white;
   --font-style: "Montserrat", sans-serif;
   --logo-font-style: "Pacifico";
+  --special-font-style: "Carpenter";
 }
 
 body {
