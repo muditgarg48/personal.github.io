@@ -27,7 +27,8 @@ function App() {
         <ProjectsSection/>
         <CertificatesSection/>
         <Footer/>
-      </Fade>
+      </>
+      }
       {/* <Fade direction="left" triggerOnce fraction={0.3}>
       </Fade>
       <Fade direction="left" triggerOnce fraction={0.3}>
