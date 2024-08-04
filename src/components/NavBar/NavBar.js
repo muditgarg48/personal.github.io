@@ -18,27 +18,18 @@ const NavBar =  () => {
     const projects_icon = require('../../assets/icons/projects.json');
     const certificates_icon = require('../../assets/icons/certificates.json');
 
-    if(size.width < 1000) {
-        return(
-            <SideNavBar>
-                <NavBarItem content="HOME" dest="welcome-section" icon={home_icon}></NavBarItem>
-                <NavBarItem content="ABOUT" dest="about-section" icon={about_icon}></NavBarItem>
-                <NavBarItem content="EXPERIENCE" dest="experience-section" icon={experience_icon}></NavBarItem>
-                <NavBarItem content="PROJECTS" dest="projects-section" icon={projects_icon}></NavBarItem>
-                <NavBarItem content="CERTIFICATES" dest="certificates-section" icon={certificates_icon}></NavBarItem>
-            </SideNavBar>
-        );
-    } else {
-        return (
-            <TopNavBar>
-                <NavBarItem content="HOME" dest="welcome-section" icon={home_icon}></NavBarItem>
-                <NavBarItem content="ABOUT" dest="about-section" icon={about_icon}></NavBarItem>
-                <NavBarItem content="EXPERIENCE" dest="experience-section" icon={experience_icon}></NavBarItem>
-                <NavBarItem content="PROJECTS" dest="projects-section" icon={projects_icon}></NavBarItem>
-                <NavBarItem content="CERTIFICATES" dest="certificates-section" icon={certificates_icon}></NavBarItem>
-            </TopNavBar>
-        );
-    }
+    const NavBarItems = [
+        <NavBarItem content="HOME" dest="welcome-section" icon={home_icon}></NavBarItem>,
+        <NavBarItem content="ABOUT" dest="about-section" icon={about_icon}></NavBarItem>,
+        <NavBarItem content="EXPERIENCE" dest="experience-section" icon={experience_icon}></NavBarItem>,
+        <NavBarItem content="PROJECTS" dest="projects-section" icon={projects_icon}></NavBarItem>,
+        <NavBarItem content="CERTIFICATES" dest="certificates-section" icon={certificates_icon}></NavBarItem>,
+    ];
+
+    if(size.width < 1000)
+        return(<SideNavBar>{NavBarItems}</SideNavBar>);
+    else
+        return (<TopNavBar>{NavBarItems}</TopNavBar>);
 }
 
 const SideNavBar = ({children}) => {
