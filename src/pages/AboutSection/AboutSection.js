@@ -4,15 +4,14 @@ import { TypeAnimation } from "react-type-animation";
 import Marquee from "react-fast-marquee";
 
 import ScrollFurther from "../../components/ScrollFurther/ScrollFurther";
+import SectionHeading from "../../components/SectionHeading/SectionHeading.js";
 import myself from '../../assets/imgs/myself.jpg';
 import skills from '../../assets/data/skills.js';
 
 const AboutSection = () => {
     return (
         <div id="about-section">
-            <div id="heading">
-                About Me
-            </div>
+            <SectionHeading section_name="ABOUT"/>
             <div id="about-section-content">
                 <div id="my-description">
                     <TypeAnimation

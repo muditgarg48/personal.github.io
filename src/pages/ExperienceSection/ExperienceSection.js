@@ -1,10 +1,11 @@
 import React from "react";
 import './ExperienceSection.css';
+import SectionHeading from '../../components/SectionHeading/SectionHeading';
 
 const ExperienceSection = () => {
     return (
         <div id="experience-section">
-            Hello
+            <SectionHeading section_name="EXPERIENCES"/>
         </div>
     );
 }

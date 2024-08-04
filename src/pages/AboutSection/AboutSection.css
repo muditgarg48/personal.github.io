@@ -6,11 +6,6 @@
     padding: 5vw;
 }
 
-#about-section #heading {
-    margin: 3rem 0;
-    font-size: 2rem;
-}
-
 #about-section-content {
     justify-content: space-evenly;
 }
