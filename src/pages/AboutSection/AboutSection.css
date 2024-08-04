@@ -29,6 +29,7 @@
 #my-potrait {
     margin: 1rem;
     width: 30vw;
+    object-fit: cover;
     border-bottom: 2px solid var(--primary-color);
     border-right: 2px solid var(--primary-color);
     border-radius: 5rem;
