@@ -28,6 +28,15 @@
     font-size: 2rem;
 }
 
+#name span {
+    transition: all 0.5s;
+}
+
+#name span:hover {
+    font-weight: bolder;
+    color: var(--font-highlight-color);
+}
+
 #brief {
     font-size: 1.5rem;
     color: var(--font-secondary-color);

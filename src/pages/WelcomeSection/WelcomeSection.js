@@ -22,7 +22,7 @@ const WelcomeSection = () => {
                 repeat={Infinity}
                 className="hello"
             />
-            <div id="name">My name is Mudit Garg</div>
+            <div id="name">My name is <span>Mudit Garg</span></div>
             <div id="brief">
                 I specialise in developing software solutions.
             </div>
