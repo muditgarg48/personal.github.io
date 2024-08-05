@@ -1,6 +1,7 @@
 {
   "name": "v2",
   "version": "0.1.0",
+  "homepage": "https://muditgarg48.github.io",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.0",
@@ -18,9 +19,12 @@
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
     "react-type-animation": "^3.2.0",
-    "rotating-text": "^1.0.4"
+    "rotating-text": "^1.0.4",
+    "v2": "file:"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

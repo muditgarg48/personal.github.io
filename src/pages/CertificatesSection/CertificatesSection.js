@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import './CertificatesSection.css';
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import certificates_data from "../../assets/data/certificates_data";
+import AnimatedIcon from "../../components/AnimatedIcon/AnimatedIcon";
 
 import { Document, Page, pdfjs } from 'react-pdf';
 import ReactCardFlip from 'react-card-flip';
@@ -17,6 +18,7 @@ const CertificatesSection = () => {
     return (
         <div id="certificates-section">
             <SectionHeading section_name="CERTIFICATES"/>
+            <Certificatev1/>
             <div id="certificates">
                 {
                     sortCertificatesByDate(certificates_data).map((certificate) => 
@@ -26,6 +28,26 @@ const CertificatesSection = () => {
             </div>
         </div>
     );
+}
+
+const Certificatev1 = () => {
+    
+    const legacy = require('../../assets/icons/legacy.json');
+    
+    return (
+        <div id="v1-button">
+            <div id="v1-button-content">
+                <a href="https://muditgarg48.github.io/my_certificates_web/" target="_blank" rel="noreferrer">
+                    <AnimatedIcon icon={legacy}/>
+                    LEGACY VERSION
+                </a>
+                <div id="legacy-tech">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="flutter"/>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" alt="dart"/>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 const Certificate = ({certificate}) => {
