@@ -109,7 +109,12 @@
     box-shadow: 2px 2px 3px black;
 }
 
-.flip-button, .open-button{
+.certificate-id {
+    width: 100%;
+    text-wrap: pretty;
+}
+
+.verify-button, .flip-button, .open-button{
     border: 2px solid var(--primary-color);
     border-radius: 20px;
     background-color: var(--secondary-color);
@@ -119,7 +124,7 @@
     cursor: pointer;
 }
 
-.open-button a{
+.verify-button a, .open-button a{
     text-decoration: none;
     color: var(--font-highlight-color);
 }

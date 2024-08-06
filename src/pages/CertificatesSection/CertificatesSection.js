@@ -127,6 +127,14 @@ const CertificateBack = ({certificate, pdfFile, isFlipped, setIsFlipped}) => {
                     <span key={authority}>{authority} </span>
                 ))}
             </div>
+            {/* <div className="certificate-id">
+                Certificate ID: {certificate.cert_id}
+            </div> */}
+            <div className="verify-button">
+                <a href={certificate.verification_link} target="_blank" rel="noreferrer">
+                    Verify
+                </a>
+            </div>
             <div className="certificate-icons">
                 <div className='open-button'>
                     <a href={pdfFile} target="_blank" rel="noreferrer">
