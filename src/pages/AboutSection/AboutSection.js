@@ -2,11 +2,13 @@ import React from "react";
 import './AboutSection.css';
 import { TypeAnimation } from "react-type-animation";
 import Marquee from "react-fast-marquee";
+import { Chrono } from "react-chrono";
 
 import ScrollFurther from "../../components/ScrollFurther/ScrollFurther";
 import SectionHeading from "../../components/SectionHeading/SectionHeading.js";
 import myself from '../../assets/imgs/myself.jpg';
 import skills from '../../assets/data/skills.js';
+import education_history from "../../assets/data/education_history.js";
 
 const AboutSection = () => {
     return (
@@ -42,8 +44,50 @@ const AboutSection = () => {
                 &nbsp;
                 <SkillSection/>
                 &nbsp;
+                <EducationSection/>
+                &nbsp;
                 <ScrollFurther next="experience-section" side="right"/>
             </div>
+        </div>
+    );
+}
+
+const EducationSection = () => {
+
+    const themeSettings = {
+        primary: 'var(--font-primary-color)',
+        secondary: 'var(--font-highlight-color)',
+        cardBgColor: 'var(--font-secondary-color)',
+        cardDetailsBgColor: 'transparent',
+        cardMediaBgColor: 'transparent',
+        cardDetailsColor: 'var(--font-highlight-color)',
+        cardSubtitleColor: 'var(--font-highlight-color)',
+        cardTitleColor: 'var(--font-highlight-color)',
+        detailsColor: 'var(--font-secondary-color)',
+        iconBackgroundColor: 'var(--primary-color)',
+        titleColor: 'var(--font-highlight-color)',
+        toolbarBgColor: 'var(--bg-color)',
+        toolbarBtnBgColor: 'var(--secondary-color)',
+        toolbarTextColor: 'black'
+    };
+    const mediaSettings = {
+        fit:'contain'
+    };
+
+    return (
+        <div id="education-subsection">
+            <div className="subsection-heading">
+                Education History
+            </div>
+            &nbsp;
+            <Chrono 
+                mode="VERTICAL"
+                mediaSettings={mediaSettings}
+                slideShow
+                slideItemDuration={6000}
+                items={education_history}
+                theme={themeSettings}
+            />
         </div>
     );
 }
@@ -85,7 +129,7 @@ const SkillSubSection = ({id, section_name, dir}) => {
             <Marquee pauseOnHover speed={70} direction={dir}>
                 {
                     skills[section_name].map((skill) => 
-                        <Skill icon={skill.icon} alt={skill.name}/>
+                        <Skill icon={skill.icon} alt={skill.name} key={skill.name}/>
                     )
                 }
             </Marquee>

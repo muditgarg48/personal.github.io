@@ -89,3 +89,8 @@
 .single_skill:hover {
     transform: translateY(-10%);
 }
+
+#education-subsection {
+    width: 100%;
+    height: fit-content;
+}
