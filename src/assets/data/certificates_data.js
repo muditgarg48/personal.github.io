@@ -221,7 +221,7 @@ const certificates_data = [
     },
     {
         "name":"Accenture Development & Advanced Engineering Job Simulation",
-        "file_name": "Accenture North America Coding Development & Advanced Engineering Job Simulation.pdf",
+        "file_name": "Accenture Advanced Engineering Job Simulation.pdf",
         "cat": [
             "Virtual Internship"
         ],
