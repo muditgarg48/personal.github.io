@@ -102,7 +102,12 @@ const CertificateFront = ({certificate, pdfFile, isFlipped, setIsFlipped}) => {
                 <div>Loading PDF...</div>
             )}
             <div className="certificate-date">
-                {formatDate(certificate.date)}
+                Issued on {formatDate(certificate.date)}
+            </div>
+            <div className='certificate-issuing-auth'>
+                {certificate.issuing_auth.map(authority => (
+                    <span key={authority} className='certificate-auth'>{authority} </span>
+                ))}
             </div>
             <div className="certificate-icons">
                 <FlipButton isFlipped={isFlipped} setIsFlipped={setIsFlipped}/>
@@ -114,7 +119,8 @@ const CertificateFront = ({certificate, pdfFile, isFlipped, setIsFlipped}) => {
 const CertificateBack = ({certificate, pdfFile, isFlipped, setIsFlipped}) => {
     
     const categories = certificate.cat;
-    
+    const topics = certificate.topics;
+
     return (
         <div className="certificate-back">
             <div className='certificate-categories'>
@@ -122,28 +128,28 @@ const CertificateBack = ({certificate, pdfFile, isFlipped, setIsFlipped}) => {
                     <span key={category} className='certificate-category'>{category}</span>
                 ))}
             </div>
-            <div className='certificate-issuing-auth'>
-                Issued By: {certificate.issuing_auth.map(authority => (
-                    <span key={authority}>{authority} </span>
+            <div className='certificate-topics'>
+                {topics.map(topic => (
+                    <span key={topic} className='certificate-topic'>{topic}</span>
                 ))}
             </div>
             {/* <div className="certificate-id">
                 Certificate ID: {certificate.cert_id}
             </div> */}
-            <div className="verify-button">
-                <a href={certificate.verification_link} target="_blank" rel="noreferrer">
-                    Verify
-                </a>
-            </div>
             <div className="certificate-icons">
+                <div className="verify-button">
+                    <a href={certificate.verification_link} target="_blank" rel="noreferrer">
+                        Verify
+                    </a>
+                </div>
                 <div className='open-button'>
                     <a href={pdfFile} target="_blank" rel="noreferrer">
                         Open 
                         {/* <img src={share} height='25px' width='25px' alt='' /> */}
                     </a>
                 </div>
-                <FlipButton isFlipped={isFlipped} setIsFlipped={setIsFlipped}/>
             </div>
+            <FlipButton isFlipped={isFlipped} setIsFlipped={setIsFlipped}/>
         </div>
     );
 }
