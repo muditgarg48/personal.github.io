@@ -11,7 +11,7 @@ const education_history = [
             type: "IMAGE"
         },
         cardDetailedText: [
-            "Achieved an overall grade of Upper Second Class Honours along with the following achievements:",
+            "Achievement of an overall grade of Upper Second Class Honours",
             "Completion of my research paper of Gesture Recognition based Smart Device control using Mediapipe and LSTM Neural Networks",
         ]
     },
@@ -27,7 +27,7 @@ const education_history = [
             type: "IMAGE"
         },
         cardDetailedText: [
-            "Achieved an overall grade of Upper Second Class Honours along with the following achievements:",
+            "Achievement of an overall grade of Upper Second Class Honours",
             "Completion of an 8-month software engineering internship at General Motors, Dublin, Ireland.",
             "Awarded a 15% scholarship on my upcoming Masters' degree at Trinity."
         ]
@@ -44,7 +44,7 @@ const education_history = [
             type: "IMAGE"
         },
         cardDetailedText: [
-            "Achieved exceptional cumulative grades along with the following achievements:",
+            "Achievement of an exceptional grade of 8.47 CGPA",
             "Chosen top 1% of the students who were given a chance to be a part of the International Engineering Program (IEP) to complete their last two years of the Bachelor's degree in Trinity College Dublin",
             "Achieved Rank 1 in the Game of Codes coding competition organised by OWASP Thapar which included most of the students from the Computer Engineering branch"
         ]
@@ -61,8 +61,8 @@ const education_history = [
             type: "IMAGE"
         },
         cardDetailedText: [
-            "Graduated High with exceptional results in the Indian School Certificate (ISC) examinations",
-            "Among the top 6% students for the Joint Entrance Exam (JEE) Mains given by more than 10 lakh students"
+            "Graduated with exceptional results in the Indian School Certificate (ISC) examinations",
+            "Secured a spot among the top 6% students for the Joint Entrance Exam (JEE) Mains given by more than 10 lakh students in India"
         ]
     },
 ];
