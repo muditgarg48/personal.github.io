@@ -9,6 +9,7 @@ import Footer from './pages/Footer/Footer';
 
 import React, {useState} from 'react';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
+import AnimatedCursor from "react-animated-cursor"
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+      <CustomCursor/>
       {loading === true? 
       <LoadingScreen/>: 
       <>
@@ -31,6 +33,25 @@ function App() {
       </>
       }
     </div>
+  );
+}
+
+const CustomCursor = () => {
+  return (
+    <AnimatedCursor
+        innerSize={8}
+        outerSize={35}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={0}
+        hasBlendMode={true}
+        innerStyle={{
+          backgroundColor: 'var(--font-highlight-color)'
+        }}
+        outerStyle={{
+          border: '3px solid var(--font-primary-color)'
+        }}
+      />
   );
 }
 
