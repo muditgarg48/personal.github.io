@@ -11,17 +11,58 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 const CertificatesSection = () => {
     
+    const [searchQuery, setSearchQuery] = useState('');
+    const [filteredCertificates, setFilteredCertificates] = useState(certificates_data);
+
+    useEffect(() => {
+        filterCertificates(searchQuery);
+    }, [searchQuery]);
+
+    const handleSearchChange = (event) => {
+        setSearchQuery(event.target.value.toLowerCase());
+    };
+
+    const filterCertificates = (query) => {
+        const filtered = certificates_data.filter((cert) => {
+            return (
+                cert.name.toLowerCase().includes(query) ||
+                cert.file_name.toLowerCase().includes(query) ||
+                cert.cat.some((category) => category.toLowerCase().includes(query)) ||
+                cert.issuing_auth.some((auth) => auth.toLowerCase().includes(query)) ||
+                cert.date.includes(query) ||
+                cert.cert_id.toLowerCase().includes(query) ||
+                cert.verification_link.toLowerCase().includes(query) ||
+                cert.topics.some((topic) => topic.toLowerCase().includes(query))
+            );
+        });
+        setFilteredCertificates(sortCertificatesByDate(filtered));
+    };
+
     function sortCertificatesByDate(certificates) {
         return certificates.sort((a, b) => new Date(b.date) - new Date(a.date));
     }
+
+    const search_icon = require('../../assets/icons/search.json');
+    const clear_query = require('../../assets/icons/fill_bin.json');
 
     return (
         <div id="certificates-section">
             <SectionHeading section_name="CERTIFICATES"/>
             <Certificatev1/>
+            <div id="search-bar">
+                <AnimatedIcon icon={search_icon} class_name="nocss"/>
+                <input
+                    type="text"
+                    placeholder="Search certificates by anything ..."
+                    value={searchQuery}
+                    onChange={handleSearchChange}
+                    id="search-input"
+                />
+                <AnimatedIcon icon={clear_query} class_name="nocss" onClick={() => setSearchQuery('')}/>
+            </div>
             <div id="certificates">
                 {
-                    sortCertificatesByDate(certificates_data).map((certificate) => 
+                    filteredCertificates.map((certificate) => 
                         <Certificate certificate={certificate}/>
                     )
                 }

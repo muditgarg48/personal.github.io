@@ -49,6 +49,32 @@
     border-radius: 50%;
 }
 
+#search-bar {
+    display: flex;
+    margin: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+#search-input {
+    width: 100%;
+    padding: 1%;
+    margin: 5px 0;
+    border: none;
+    background-color: transparent;
+    color: var(--font-highlight-color);
+    font-size: 1rem;
+}
+
+#search-input::placeholder {
+    color: var(--font-primary-color);
+}
+  
+#search-input::-ms-input-placeholder {
+    color: var(--font-primary-color);
+}
+
 #certificates{
     display:flex;
     overflow-x: auto;
