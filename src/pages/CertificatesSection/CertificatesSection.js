@@ -63,9 +63,11 @@ const CertificatesSection = () => {
             </div>
             <div id="certificates">
                 {
+                    filteredCertificates.length > 0?
                     filteredCertificates.map((certificate) => 
                         <Certificate certificate={certificate}/>
-                    )
+                    ):
+                    <span>No certificates found!</span>
                 }
             </div>
         </div>
