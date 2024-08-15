@@ -40,7 +40,7 @@ const CustomCursor = () => {
   return (
     <AnimatedCursor
         innerSize={8}
-        outerSize={35}
+        outerSize={20}
         innerScale={1}
         outerScale={2}
         outerAlpha={0}
@@ -49,7 +49,7 @@ const CustomCursor = () => {
           backgroundColor: 'var(--font-highlight-color)'
         }}
         outerStyle={{
-          border: '3px solid var(--font-primary-color)'
+          border: '3px solid var(--font-secondary-color)'
         }}
       />
   );

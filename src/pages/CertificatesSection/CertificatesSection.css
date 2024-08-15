@@ -54,7 +54,7 @@
     margin: 20px;
     justify-content: space-evenly;
     align-items: center;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--font-secondary-color);
 }
 
 #search-input {
@@ -68,11 +68,15 @@
 }
 
 #search-input::placeholder {
-    color: var(--font-primary-color);
+    color: var(--font-secondary-color);
+}
+
+#search-input:focus {
+    outline: none;
 }
   
 #search-input::-ms-input-placeholder {
-    color: var(--font-primary-color);
+    color: var(--font-secondary-color);
 }
 
 #certificates{
