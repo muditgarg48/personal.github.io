@@ -5,8 +5,7 @@
     padding: .5% 5%;
     position: fixed;
     width: 90%;
-    /* margin: 0 5%; */
-    z-index: 1000;
+    z-index: 2;
     transition: all 1s;
     backdrop-filter: blur(6.2px);
     -webkit-backdrop-filter: blur(6.2px);
