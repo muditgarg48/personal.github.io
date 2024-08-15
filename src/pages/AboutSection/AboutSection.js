@@ -7,8 +7,6 @@ import { Chrono } from "react-chrono";
 import ScrollFurther from "../../components/ScrollFurther/ScrollFurther";
 import SectionHeading from "../../components/SectionHeading/SectionHeading.js";
 import myself from '../../assets/imgs/myself.jpg';
-import skills from '../../assets/data/skills.js';
-import education_history from "../../assets/data/education_history.js";
 
 const AboutSection = () => {
     return (
@@ -74,6 +72,8 @@ const EducationSection = () => {
         fit:'contain'
     };
 
+    const education_history = require('../../assets/data/education_history.json');
+
     return (
         <div id="education-subsection">
             <div className="subsection-heading">
@@ -123,6 +123,9 @@ const SkillSection = () => {
 }
 
 const SkillSubSection = ({id, section_name, dir}) => {
+
+    const skills = require('../../assets/data/skills.json');
+
     return (
         <div id={id} className="skill_subsection">
             <div id="">{section_name}</div>

@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import './CertificatesSection.css';
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
-import certificates_data from "../../assets/data/certificates_data";
 import AnimatedIcon from "../../components/AnimatedIcon/AnimatedIcon";
 
 import { Document, Page, pdfjs } from 'react-pdf';
@@ -11,6 +10,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 const CertificatesSection = () => {
     
+    const certificates_data = require('../../assets/data/certificates_data.json');
+
     const [searchQuery, setSearchQuery] = useState('');
     const [filteredCertificates, setFilteredCertificates] = useState(certificates_data);
 

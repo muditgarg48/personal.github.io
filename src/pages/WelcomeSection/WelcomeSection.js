@@ -4,7 +4,6 @@ import my_resume from '../../assets/pdfs/My Resume.pdf';
 import { TypeAnimation } from 'react-type-animation';
 import AnimatedIcon from "../../components/AnimatedIcon/AnimatedIcon";
 import ScrollFurther from "../../components/ScrollFurther/ScrollFurther";
-import hello_sequence from "../../assets/data/differentHellos";
 
 const WelcomeSection = () => {
 
@@ -13,6 +12,8 @@ const WelcomeSection = () => {
     const gmail_icon = require('../../assets/icons/gmail.json');
     const github_icon = require('../../assets/icons/github.json');
     const resume_icon = require('../../assets/icons/resume.json');
+
+    const hello_sequence = require('../../assets/data/differentHellos.json');
 
     return (
         <div id="welcome-section">
