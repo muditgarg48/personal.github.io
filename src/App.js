@@ -1,4 +1,3 @@
-import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import WelcomeSection from './pages/WelcomeSection/WelcomeSection';
 import AboutSection from './pages/AboutSection/AboutSection';
@@ -19,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <CustomCursor/>
+      {/* <CustomCursor/> */}
       {loading === true? 
       <LoadingScreen/>: 
       <>
@@ -49,7 +48,9 @@ const CustomCursor = () => {
           backgroundColor: 'var(--font-highlight-color)'
         }}
         outerStyle={{
-          border: '3px solid var(--font-secondary-color)'
+          background: 'rgba(0, 172, 240, 0.3058823529411765)',
+          boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+          backdropFilter: 'blur(1.1px)',
         }}
       />
   );
