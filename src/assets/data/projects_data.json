@@ -1,8 +1,22 @@
 [
     {
+        "name": "Candle in Dark",
+        "desc": "A cross platform Flutter app designed to help international students at Trinity College Dublin seamlessly adapt to their new country and environment.",
+        "speciality": "Featured App",
+        "image": "candle_in_dark.png",
+        "tech_stack": [
+            "Flutter",
+            "Firebase",
+            "Google Cloud"
+        ],
+        "github": "https://github.com/muditgarg48/candle_in_dark",
+        "deployment": "https://muditgarg48.github.io/candle_in_dark_web/",
+        "other_btns": []
+    },
+    {
         "name": "Portfolio React Application",
         "desc": "An interactive personal portfolio website showcasing my skills, projects, and professional journey in a sleek and modern design.",
-        "speciality": "Portfolio website",
+        "speciality": "Portfolio Website",
         "image": "portfolio_react_app.png",
         "tech_stack": [
             "React",
@@ -48,20 +62,6 @@
         ],
         "github": "https://github.com/muditgarg48/gesture_based_device_control",
         "deployment": "",
-        "other_btns": []
-    },
-    {
-        "name": "Candle in Dark",
-        "desc": "A cross platform Flutter app designed to help international students at Trinity College Dublin seamlessly adapt to their new country and environment.",
-        "speciality": "Featured App",
-        "image": "candle_in_dark.png",
-        "tech_stack": [
-            "Flutter",
-            "Firebase",
-            "Google Cloud"
-        ],
-        "github": "https://github.com/muditgarg48/candle_in_dark",
-        "deployment": "https://muditgarg48.github.io/candle_in_dark_web/",
         "other_btns": []
     },
     {
