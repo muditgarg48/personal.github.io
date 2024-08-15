@@ -74,10 +74,11 @@ const MajorProject = ({ name, desc, speciality, image, tech_stack, github, deplo
                     }
                 </div>
                 <div className="project-links">
-                    {/* <a href={deployment} target="_blank" rel="noopener noreferrer">Live Site</a> */}
-                    {/* <a href={github} target="_blank" rel="noopener noreferrer">Check Code</a> */}
                     <AnimatedIcon icon={git_repo} link={github} class_name="nocss"/>
-                    <AnimatedIcon icon={redirect} link={deployment} class_name="nocss" icon_size={25}/>
+                    {
+                        deployment &&
+                        <AnimatedIcon icon={redirect} link={deployment} class_name="nocss" icon_size={25}/>
+                    }
                     {other_btns && other_btns.map((btn, index) => (
                         <a href={btn.github} key={index} target="_blank" rel="noopener noreferrer" className="other-btn">{btn.text}</a>
                     ))}
@@ -95,7 +96,10 @@ const MinorProject = ({ name, desc, tech_stack, github, deployment, other_btns }
             <div className="minor-project-links">
                 <div className="project-links">
                     <AnimatedIcon icon={git_repo} link={github} class_name="nocss"/>
-                    <AnimatedIcon icon={redirect} link={deployment} class_name="nocss" icon_size={25}/>
+                    {
+                        deployment &&
+                        <AnimatedIcon icon={redirect} link={deployment} class_name="nocss" icon_size={25}/>
+                    }
                     {other_btns && other_btns.map((btn, index) => (
                         <a href={btn.github} key={index} target="_blank" rel="noopener noreferrer" className="other-btn">{btn.text}</a>
                     ))}
