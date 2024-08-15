@@ -52,9 +52,11 @@
 #search-bar {
     display: flex;
     margin: 20px;
+    padding: 0 10px;
     justify-content: space-evenly;
     align-items: center;
-    border-bottom: 2px solid var(--font-secondary-color);
+    border: 2px solid var(--font-secondary-color);
+    border-radius: 50px;
 }
 
 #search-input {
