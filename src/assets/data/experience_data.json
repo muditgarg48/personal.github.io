@@ -2,6 +2,7 @@
     {
         "name": "General Motors",
         "domain": "gm.com",
+        "website": "https://gm.com",
         "role": "Advanced Software Developer Intern",
         "desc": [
             "Worked on an API-based emailing service that sends weekly emails with vital information about their projects at the start of their business week. Improved the code quality and performance by about 94%.",
@@ -26,6 +27,7 @@
     {
         "name": "Your Company",
         "domain": "questionmark.com",
+        "website": "",
         "role": "Software Engineer",
         "desc": [
             "Open to learning new technologies and frameworks.",
@@ -34,7 +36,7 @@
             "Committed to making small issues matter even less."
         ],
         "start": "Very Soon",
-        "end": "Hopefully Not",
+        "end": "Future",
         "tech": [
             "Always",
             "Open",

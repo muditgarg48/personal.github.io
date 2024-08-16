@@ -40,7 +40,7 @@ const ExperienceSection = () => {
                         <span className="experience-company">
                             @
                             &nbsp;
-                            <a href={experience_data[expIndex].domain} target="_blank" rel="noreferrer">
+                            <a href={experience_data[expIndex].website} target="_blank" rel="noreferrer">
                                 {experience_data[expIndex].name}
                             </a>
                         </span>

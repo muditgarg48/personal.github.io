@@ -50,6 +50,10 @@
     text-decoration: underline;
 }
 
+.experience-desc {
+    list-style-type: "👉";
+}
+
 .experience-desc li {
     padding: 5px;
 }
