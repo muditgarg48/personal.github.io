@@ -9,7 +9,7 @@
             "Firebase",
             "Google Cloud"
         ],
-        "github": "https://github.com/muditgarg48/candle_in_dark",
+        "github": "https://github.com/muditgarg48/candle_in_dark_web",
         "deployment": "https://muditgarg48.github.io/candle_in_dark_web/",
         "other_btns": []
     },
@@ -62,7 +62,12 @@
         ],
         "github": "https://github.com/muditgarg48/gesture_based_device_control",
         "deployment": "",
-        "other_btns": []
+        "other_btns": [
+            {
+                "text": "README",
+                "github": "https://github.com/muditgarg48/gesture_based_device_control/blob/main/README.md"
+            }
+        ]
     },
     {
         "name": "Peer to Peer Vehicular Emergency Network",
@@ -74,10 +79,15 @@
         ],
         "github": "https://github.com/muditgarg48/p2p-vehicular-network",
         "deployment": "",
-        "other_btns": []
+        "other_btns": [
+            {
+                "text": "README",
+                "github": "https://github.com/muditgarg48/p2p-vehicular-network/blob/main/README.md"
+            }
+        ]
     },
     {
-        "name": "TinkerCAD Projects Dashboard",
+        "name": "TinkerCAD Project Dashboard",
         "desc": "A Bootstrap website showcasing practical Tinkercad projects developed during college, each designed for specific scenarios and use cases.",
         "speciality": "",
         "image": "",
