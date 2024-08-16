@@ -66,10 +66,12 @@ const MajorProject = ({ name, desc, speciality, image, tech_stack, github, deplo
                 </div>
                 <h3>{name}</h3>
                 <p>{desc}</p>
-                <div clasName="project-tech">
+                <div className="project-tech">
                     {
                         tech_stack.map((tech, index)=> (
-                            <span key={index} className="tech">{tech}</span>
+                            <div key={index} className="tech">
+                                {tech}
+                            </div>
                         ))
                     }
                 </div>
@@ -107,7 +109,7 @@ const MinorProject = ({ name, desc, tech_stack, github, deployment, other_btns }
             </div>
             <h3>{name}</h3>
             <p>{desc}</p>
-            <div clasName="project-tech">
+            <div className="project-tech">
                 {
                     tech_stack.map((tech, index)=> (
                         <span key={index} className="tech">{tech}</span>

@@ -129,6 +129,11 @@
     padding: 1%;
     min-width: 29%;
     max-width: min-content;
+    transition: all 0.5s;
+}
+
+.minor-project-component:hover {
+    transform: translateY(-3%);
 }
 
 @media (max-width: 1000px) {
