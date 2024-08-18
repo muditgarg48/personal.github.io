@@ -8,7 +8,6 @@ import ScrollFurther from "../../components/ScrollFurther/ScrollFurther";
 const WelcomeSection = () => {
 
     const linkedin_icon = require('../../assets/icons/linkedin.json');
-    const instagram_icon = require('../../assets/icons/instagram.json');
     const gmail_icon = require('../../assets/icons/gmail.json');
     const github_icon = require('../../assets/icons/github.json');
     const resume_icon = require('../../assets/icons/resume.json');
@@ -36,7 +35,6 @@ const WelcomeSection = () => {
                 <div id="contact_icons">
                     <AnimatedIcon icon={linkedin_icon} link="https://linkedin.com/in/muditgarg48"/>
                     <AnimatedIcon icon={github_icon} link="https://github.com/muditgarg48"/>
-                    <AnimatedIcon icon={instagram_icon} link="https://instagram.com/mudit137"/>
                     <AnimatedIcon icon={gmail_icon} link="mailto:gargmu@tcd.ie"/>
                     <a href={my_resume} id="resume_btn" target="_blank" rel="noreferrer">
                         <AnimatedIcon icon={resume_icon} class_name="nocss"/>

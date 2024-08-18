@@ -1,12 +1,13 @@
 {
   "name": "v2",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "homepage": "https://muditgarg48.github.io",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@lordicon/react": "^1.6.0",
     "@uidotdev/usehooks": "^2.4.1",
+    "axios": "^1.7.4",
     "framer-motion": "^11.3.19",
     "hamburger-react": "^2.5.1",
     "lottie-web": "^5.12.2",

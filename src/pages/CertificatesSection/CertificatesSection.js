@@ -49,7 +49,6 @@ const CertificatesSection = () => {
     return (
         <div id="certificates-section">
             <SectionHeading section_name="CERTIFICATES"/>
-            <Certificatev1/>
             <div id="search-bar">
                 <AnimatedIcon icon={search_icon} class_name="nocss"/>
                 <input
@@ -58,7 +57,7 @@ const CertificatesSection = () => {
                     value={searchQuery}
                     onChange={handleSearchChange}
                     id="search-input"
-                />
+                    />
                 <AnimatedIcon icon={clear_query} class_name="nocss" onClick={() => setSearchQuery('')}/>
             </div>
             <div id="certificates">
@@ -66,10 +65,11 @@ const CertificatesSection = () => {
                     filteredCertificates.length > 0?
                     filteredCertificates.map((certificate) => 
                         <Certificate certificate={certificate}/>
-                    ):
-                    <span>No certificates found!</span>
-                }
+                ):
+                <span>No certificates found!</span>
+            }
             </div>
+            <Certificatev1/>
         </div>
     );
 }
@@ -86,6 +86,8 @@ const Certificatev1 = () => {
                     LEGACY VERSION
                 </a>
                 <div id="legacy-tech">
+                    POWERED BY
+                    &nbsp;
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="flutter"/>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg" alt="dart"/>
                 </div>

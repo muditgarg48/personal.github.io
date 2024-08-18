@@ -1,8 +1,7 @@
 [
     {
-        "title": "Sept'23 - Jun'24",
-        "cardTitle": "M.A.I. in Computer Engineering",
-        "cardSubtitle": "Dublin, Ireland",
+        "title": "Sept'21 - Jun'24",
+        "cardTitle": "Dublin, Ireland",
         "media": {
             "name": "Trinity College Dublin, Ireland",
             "source": {
@@ -10,32 +9,30 @@
             },
             "type": "IMAGE"
         },
-        "cardDetailedText": [
-            "Achievement of an overall grade of Upper Second Class Honours",
-            "Completion of my research paper of Gesture Recognition based Smart Device control using Mediapipe and LSTM Neural Networks"
-        ]
-    },
-    {
-        "title": "Sept'21 - Aug'23",
-        "cardTitle": "B.A.I. in Computer Engineering",
-        "cardSubtitle": "Dublin, Ireland",
-        "media": {
-            "name": "Trinity College Dublin, Ireland",
-            "source": {
-                "url": "https://www.tcd.ie/identity/assets/logos/Logos%20page/png/Trinity%20logo%20%E2%80%93%20White.png"
+        "items": [
+            {
+                "cardTitle": "M.A.I. in Computer Engineering",
+                "cardSubtitle": "Sept'23 - Jun'24",
+                "cardDetailedText": [
+                    "Achievement of an overall grade of Upper Second Class Honours",
+                    "Completion of my research paper of Gesture Recognition based Smart Device control using Mediapipe and LSTM Neural Networks"
+                ]
             },
-            "type": "IMAGE"
-        },
-        "cardDetailedText": [
-            "Achievement of an overall grade of Upper Second Class Honours",
-            "Completion of an 8-month software engineering internship at General Motors, Dublin, Ireland.",
-            "Awarded a 15% scholarship on my upcoming Masters' degree at Trinity."
+            {
+                "cardTitle": "B.A.I. in Computer Engineering",
+                "cardSubtitle": "Sept'21 - Aug'23",
+                "cardDetailedText": [
+                    "Achievement of an overall grade of Upper Second Class Honours",
+                    "Completion of an 8-month software engineering internship at General Motors, Dublin, Ireland.",
+                    "Awarded a 15% scholarship on my upcoming Masters' degree at Trinity."
+                ]
+            }
         ]
     },
     {
         "title": "Aug'19 - Aug'23",
-        "cardTitle": "B.Tech in Computer Engineering",
-        "cardSubtitle": "Patiala, Punjab, India",
+        "cardTitle": "Patiala, Punjab, India",
+        "cardSubtitle": "B.Tech in Computer Engineering",
         "media": {
             "name": "Thapar Institute of Engineering and Technology, Patiala, Punjab, India",
             "source": {
@@ -51,8 +48,8 @@
     },
     {
         "title": " - Jun'19",
-        "cardTitle": "Higher Secondary Education",
-        "cardSubtitle": "Kanpur, UP, India",
+        "cardTitle": "Kanpur, UP, India",
+        "cardSubtitle": "Higher Secondary Education",
         "media": {
             "name": "Sheiling House School, Kanpur, UP, India",
             "source": {

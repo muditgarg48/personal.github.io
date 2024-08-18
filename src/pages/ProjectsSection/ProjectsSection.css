@@ -53,13 +53,12 @@
 
 .project-details:hover {
     left: -10%;
-    color: var(--bg-color);
-    background: rgba(0, 172, 240, 0.7);
+    background: var(--bg-color);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--font-secondary-color);
 }
 
 .project-headline {

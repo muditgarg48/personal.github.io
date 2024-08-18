@@ -20,10 +20,8 @@ const AboutSection = () => {
                         speed={100}
                         sequence={[
                             `Hi there! My name is Mudit Garg. I am an upcoming Software Engineer who is passionate about creating projects that solve various small yet significant problems we usually face in our daily lives. With an aspiration to learn and practically apply new ways to do stuff, I am proficient in many languages and frameworks but currently still involved in learning something new.
-                            
-                            My first attempt of making something was my Project Asterix in Xth Standard. It was a simple chatbot based in Java which just employed if else statements to look for particular keywords in the prompt provided by the user to respond accordingly. Surprising, it turns out, thats how every chatbot, at a massive scale did, until the emergence of LLMs.
 
-                            Fast-forward to today, my main focus has been to learning new technologies, particularly understanding how LLMs and Generative AI work.
+                            Currently, my main focus has been to learning new technologies, particularly understanding how LLMs and Generative AI work.
 
                             I have also recently completed the OCI Generative AI Certification from Oracle.`,
                             1000,
@@ -42,9 +40,9 @@ const AboutSection = () => {
                 &nbsp;
                 <SkillSection/>
                 &nbsp;
+                <ScrollFurther next="experience-section" side="right"/>
                 <EducationSection/>
                 &nbsp;
-                <ScrollFurther next="experience-section" side="right"/>
             </div>
         </div>
     );
@@ -61,12 +59,12 @@ const EducationSection = () => {
         cardDetailsColor: 'var(--font-highlight-color)',
         cardSubtitleColor: 'var(--font-highlight-color)',
         cardTitleColor: 'var(--font-highlight-color)',
-        detailsColor: 'var(--font-secondary-color)',
-        iconBackgroundColor: 'var(--primary-color)',
         titleColor: 'var(--font-highlight-color)',
         toolbarBgColor: 'var(--bg-color)',
         toolbarBtnBgColor: 'var(--secondary-color)',
-        toolbarTextColor: 'black'
+        toolbarTextColor: 'var(--font-highlight-color)',
+        nestedCardBgColor: 'var(--font-secondary-color)',
+        nestedCardTitleColor: 'var(--font-highlight-color)'
     };
     const mediaSettings = {
         fit:'contain'
@@ -84,7 +82,8 @@ const EducationSection = () => {
                 mode="VERTICAL"
                 mediaSettings={mediaSettings}
                 slideShow
-                slideItemDuration={6000}
+                slideItemDuration={3000}
+                slideShowType="slide_from_sides"
                 items={education_history}
                 theme={themeSettings}
             />
