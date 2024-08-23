@@ -102,13 +102,16 @@
     width: 3%;
 }
 
-.alfred-container, .user-container, .system-container {
+.alfred-container, .user-container {
     display: flex;
-    align-items: center;
+    align-items: start;
     margin: 15px 2px;
 }
 
 .system-container {
+    display: flex;
+    align-items: center;
+    margin: 15px 2px;
     justify-content: center;
 }
 
@@ -128,18 +131,23 @@
     text-wrap: pretty;
 }
 
+.context-sources {
+    font-size: 80%;
+    color: var(--bg-color);
+}
+
 .system-message {
     color: var(--font-secondary-color);
     display: flex;
     justify-content: center;
+    text-align: center;    
 }
 
 #message-input {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 96%;
-    margin: 1%;
+    width: 90%;
+    margin: 2vh 0;
     padding: 1%;
     border: 2px solid grey;
     border-radius: 40px;
@@ -151,8 +159,7 @@
     height: 30px;
     background-color: transparent;
     color: var(--font-highlight-color);
-    border:none;
-    font-size: 120%;
+    border: none;
     padding: 0 10px;
     font-family: var(--font-style);
 }
@@ -168,4 +175,10 @@
     border-radius: 40px;
     border: none;
     cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .alfred-message, .user-message {
+        max-width: 100%;
+    }
 }

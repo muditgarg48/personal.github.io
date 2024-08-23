@@ -12,7 +12,8 @@ function ChatbotSection() {
 
   const initMessage = {
     person: "alfred",
-    message: "Hi there! I'm A.L.F.R.E.D. I know everything about Mudit. Ask away!"
+    message: "Hi there! I'm A.L.F.R.E.D. I know everything about Mudit. Ask away!",
+    sources: [],
   };
 
   const [query, setQuery] = useState("");
@@ -109,13 +110,14 @@ function ChatbotSection() {
       console.log(query);
       const formData = new FormData();
       formData.append('user_query', query);
+      setQuery("");
       const response = await axios.post(deployment+'/query', formData);
       console.log(response);
-      setQuery("");
       newHistory.pop();
       newHistory = [...newHistory, {
         person: "alfred",
-        message: response.data.answer
+        message: response.data.answer,
+        sources: response.data.sources
       }];
       setChatHistory(newHistory);
     } catch (error) {
@@ -167,17 +169,24 @@ function ChatbotSection() {
             // <ChatHistory chatHistory={chatHistory}/>:
             <ChatInactive/>
         }
-        <form onSubmit={handleSubmit} id="message-input">
-          <input
-            type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Ask away..."
-          />
-          <button type="submit" id="submit">
-            <img src="https://img.icons8.com/?size=100&id=23365&format=png&color=000000" alt="ask" height="40%" width="40%"/>
-          </button>
-        </form>
+        <div style={{display: "flex", justifyContent: "center"}}>
+          <form onSubmit={handleSubmit} id="message-input">
+            <input
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Ask away..."
+            />
+            {/* <button type="submit" id="submit">
+              <img 
+                src="https://img.icons8.com/?size=100&id=93330&format=png&color=000000" 
+                alt="ask" 
+                height="40%" 
+                width="40%"
+              />
+            </button> */}
+          </form>
+        </div>
       </div>
     </div>
   )
@@ -203,7 +212,7 @@ function ChatHistory({chatHistory, chatEndRef}) {
                 <img 
                   src={ chat.person === "alfred"?
                     "https://img.icons8.com/?size=100&id=w9eNLzjc4dDx&format=png&color=000000":
-                    "https://img.icons8.com/?size=100&id=w9eNLzjc4dDx&format=png&color=000000"
+                    "https://img.icons8.com/?size=100&id=61992&format=png&color=000000"
                   }
                   className="avatar"
                   alt="conversationalist"
@@ -211,12 +220,19 @@ function ChatHistory({chatHistory, chatEndRef}) {
               }
               <div className={`${chat.person}-message`}>
                 {chat.message}
+                {chat.person === 'alfred' && chat.sources?.length>0 && <div className="context-sources">
+                  <span style={{textDecoration: "underline"}}>
+                    From:
+                  </span>
+                  &nbsp;
+                  {chat.sources.join(' | ')}
+                </div>}
               </div>
             </div>
           );
         })
       }
-      {/* <div ref={chatEndRef}/> */}
+      <div ref={chatEndRef}/>
     </div>
   );
 }
