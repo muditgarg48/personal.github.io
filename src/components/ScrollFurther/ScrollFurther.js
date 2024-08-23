@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
 import './ScrollFurther.css';
 
-const ScrollFurther = ({next, side="left"}) => {
+const ScrollFurther = ({next, side="left", text="Scroll Down to explore further"}) => {
 
     const scroll_icon = require('../../assets/icons/scroll.json');
 
@@ -13,7 +13,7 @@ const ScrollFurther = ({next, side="left"}) => {
                 <AnimatedIcon icon={scroll_icon} class_name="nocss" icon_size={50}/>
             </Link>
             &nbsp;
-            Scroll Down to explore further
+            {text}
         </div>
     );
 }
