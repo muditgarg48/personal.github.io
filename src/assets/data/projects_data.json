@@ -101,5 +101,21 @@
         "github": "https://github.com/muditgarg48/tinkercad_projects",
         "deployment": "https://muditgarg48.github.io/tinkercad_projects/",
         "other_btns": []
+    },
+    {
+        "name": "Meet A.L.F.R.E.D.",
+        "desc": "A RAG based chatbot on my portfolio website that uses LLMs to provide human-like responses to queries about my professional background, based on various personal data files.",
+        "speciality": "RAG Backend Server",
+        "image": "alfred_rag_chat.png",
+        "tech_stack": [
+            "Python",
+            "Flask",
+            "ChromaDB",
+            "LangChain",
+            "Gemini API"
+        ],
+        "github": "https://github.com/muditgarg48/self-rag-system",
+        "deployment": "https://muditgarg48.github.io/#chatbot-section",
+        "other_btns": []
     }
 ]
