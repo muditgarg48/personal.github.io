@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkv2=self.webpackChunkv2||[]).push([[686],{5686:(e,a,s)=>{e.exports=s.p+"static/media/alfred_rag_chat.0ba53370414e0e573e58.png"}}]);

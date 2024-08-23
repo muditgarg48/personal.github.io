@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.ae94c3fb.css",
-    "main.js": "/static/js/main.a4cc8510.js",
-    "static/js/686.ba6bc6e5.chunk.js": "/static/js/686.ba6bc6e5.chunk.js",
+    "main.js": "/static/js/main.9e9088e5.js",
+    "static/js/686.95d55476.chunk.js": "/static/js/686.95d55476.chunk.js",
     "static/js/834.97ccc3c9.chunk.js": "/static/js/834.97ccc3c9.chunk.js",
     "static/js/328.01872358.chunk.js": "/static/js/328.01872358.chunk.js",
     "static/js/566.d01e7e0e.chunk.js": "/static/js/566.d01e7e0e.chunk.js",
@@ -22,6 +22,7 @@
     "static/media/candle_in_dark.png": "/static/media/candle_in_dark.cb9a5a461fb8247dcc2e.png",
     "static/media/OCI Generative AI Certification.pdf": "/static/media/OCI Generative AI Certification.7f96676e547ccc087eee.pdf",
     "static/media/Accenture Advanced Engineering Job Simulation.pdf": "/static/media/Accenture Advanced Engineering Job Simulation.fe5d1c76e24e39ff5329.pdf",
+    "static/media/alfred_rag_chat.png": "/static/media/alfred_rag_chat.bbb2c1455b1434531a25.png",
     "static/media/Technical Support Fundamentals by Google.pdf": "/static/media/Technical Support Fundamentals by Google.83b6816172ee7c7fee75.pdf",
     "static/media/Learning C - with exam result.pdf": "/static/media/Learning C - with exam result.c67708398db27ea7af5a.pdf",
     "static/media/myself.jpg": "/static/media/myself.dd0369e3ad1f1e6b4522.jpg",
@@ -33,7 +34,6 @@
     "static/media/portfolio_react_app.png": "/static/media/portfolio_react_app.d1594e3aff7777ff8f60.png",
     "static/media/My Resume.pdf": "/static/media/My Resume.d3f7aa3b776114255d0e.pdf",
     "static/media/JPMC Virtual Internship.pdf": "/static/media/JPMC Virtual Internship.86bea7abeaa07fe2cebc.pdf",
-    "static/media/alfred_rag_chat.png": "/static/media/alfred_rag_chat.0ba53370414e0e573e58.png",
     "static/media/Career Essentials in Generative AI by Microsoft and LinkedIn.pdf": "/static/media/Career Essentials in Generative AI by Microsoft and LinkedIn.6e533a51868604444b65.pdf",
     "static/media/gesture_based_device_control.png": "/static/media/gesture_based_device_control.a3fbd3fb4164599e544f.png",
     "static/media/Carpenter-Regular.eot": "/static/media/Carpenter-Regular.ce9705fc89e5238e0da2.eot",
@@ -42,10 +42,10 @@
     "static/media/Carpenter-Regular.woff2": "/static/media/Carpenter-Regular.044e38e83874148e0203.woff2",
     "index.html": "/index.html",
     "main.ae94c3fb.css.map": "/static/css/main.ae94c3fb.css.map",
-    "main.a4cc8510.js.map": "/static/js/main.a4cc8510.js.map"
+    "main.9e9088e5.js.map": "/static/js/main.9e9088e5.js.map"
   },
   "entrypoints": [
     "static/css/main.ae94c3fb.css",
-    "static/js/main.a4cc8510.js"
+    "static/js/main.9e9088e5.js"
   ]
 }
