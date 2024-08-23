@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.dfc115be.css",
-    "main.js": "/static/js/main.3cae9a1e.js",
+    "main.css": "/static/css/main.ae94c3fb.css",
+    "main.js": "/static/js/main.a4cc8510.js",
+    "static/js/686.ba6bc6e5.chunk.js": "/static/js/686.ba6bc6e5.chunk.js",
     "static/js/834.97ccc3c9.chunk.js": "/static/js/834.97ccc3c9.chunk.js",
     "static/js/328.01872358.chunk.js": "/static/js/328.01872358.chunk.js",
     "static/js/566.d01e7e0e.chunk.js": "/static/js/566.d01e7e0e.chunk.js",
@@ -32,6 +33,7 @@
     "static/media/portfolio_react_app.png": "/static/media/portfolio_react_app.d1594e3aff7777ff8f60.png",
     "static/media/My Resume.pdf": "/static/media/My Resume.d3f7aa3b776114255d0e.pdf",
     "static/media/JPMC Virtual Internship.pdf": "/static/media/JPMC Virtual Internship.86bea7abeaa07fe2cebc.pdf",
+    "static/media/alfred_rag_chat.png": "/static/media/alfred_rag_chat.0ba53370414e0e573e58.png",
     "static/media/Career Essentials in Generative AI by Microsoft and LinkedIn.pdf": "/static/media/Career Essentials in Generative AI by Microsoft and LinkedIn.6e533a51868604444b65.pdf",
     "static/media/gesture_based_device_control.png": "/static/media/gesture_based_device_control.a3fbd3fb4164599e544f.png",
     "static/media/Carpenter-Regular.eot": "/static/media/Carpenter-Regular.ce9705fc89e5238e0da2.eot",
@@ -39,11 +41,11 @@
     "static/media/Carpenter-Regular.woff": "/static/media/Carpenter-Regular.78d87bd02ad1f539d9f8.woff",
     "static/media/Carpenter-Regular.woff2": "/static/media/Carpenter-Regular.044e38e83874148e0203.woff2",
     "index.html": "/index.html",
-    "main.dfc115be.css.map": "/static/css/main.dfc115be.css.map",
-    "main.3cae9a1e.js.map": "/static/js/main.3cae9a1e.js.map"
+    "main.ae94c3fb.css.map": "/static/css/main.ae94c3fb.css.map",
+    "main.a4cc8510.js.map": "/static/js/main.a4cc8510.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfc115be.css",
-    "static/js/main.3cae9a1e.js"
+    "static/css/main.ae94c3fb.css",
+    "static/js/main.a4cc8510.js"
   ]
 }
