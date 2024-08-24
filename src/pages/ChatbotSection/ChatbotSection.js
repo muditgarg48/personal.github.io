@@ -20,11 +20,11 @@ function ChatbotSection() {
   const [chatHistory, setChatHistory] = useState([initMessage]);
   const [chatActive, setChatActive] = useState(false);
 
-  const chatEndRef = useRef(null);
+  const alfredEndRef = useRef(null);
 
   const scrollToBottom = () => {
     if (chatHistory.length > 5)
-      chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+      alfredEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
@@ -165,7 +165,7 @@ function ChatbotSection() {
         </div>
         {
           chatActive === true?
-            <ChatHistory chatHistory={chatHistory} chatEndRef={chatEndRef}/>:
+            <ChatHistory chatHistory={chatHistory} alfredEndRef={alfredEndRef}/>:
             // <ChatHistory chatHistory={chatHistory}/>:
             <ChatInactive/>
         }
@@ -200,7 +200,7 @@ function ChatInactive() {
   );
 }
 
-function ChatHistory({chatHistory, chatEndRef}) {
+function ChatHistory({chatHistory, alfredEndRef}) {
   // function ChatHistory({chatHistory}) {
   return (
     <div id="chat-history">
@@ -232,7 +232,7 @@ function ChatHistory({chatHistory, chatEndRef}) {
           );
         })
       }
-      <div ref={chatEndRef}/>
+      <div ref={alfredEndRef}/>
     </div>
   );
 }

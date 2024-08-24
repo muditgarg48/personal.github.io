@@ -127,7 +127,7 @@ const SkillSubSection = ({id, section_name, dir}) => {
 
     return (
         <div id={id} className="skill_subsection">
-            <div id="">{section_name}</div>
+            <div style={{display: "flex", justifyContent: "center"}}>{section_name}</div>
             <Marquee pauseOnHover speed={70} direction={dir}>
                 {
                     skills[section_name].map((skill) => 
