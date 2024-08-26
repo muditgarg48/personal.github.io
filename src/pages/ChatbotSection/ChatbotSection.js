@@ -2,7 +2,6 @@ import React, {useState, useEffect, useRef} from 'react'
 // import React, {useState, useEffect} from 'react'
 import './ChatbotSection.css'
 import axios from 'axios';
-import { TypeAnimation } from "react-type-animation";
 
 import SectionHeading from '../../components/SectionHeading/SectionHeading';
 
