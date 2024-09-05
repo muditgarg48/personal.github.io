@@ -214,5 +214,27 @@
             "LangChain",
             "RAG"
         ]
+    },
+    {
+        "name":"Google AI Essentials",
+        "file_name": "Google AI Essentials.pdf",
+        "cat": [
+            "Online Certification",
+            "Generative AI"
+        ],
+        "issuing_auth": [
+            "Coursera",
+            "Google",
+            "Credly"
+        ],
+        "date": "2024-09-05",
+        "cert_id": "WPW7HFZ5CD2V",
+        "verification_link": "https://www.coursera.org/account/accomplishments/records/WPW7HFZ5CD2V",
+        "topics": [
+            "Artificial Intelligence (AI)",
+            "Prompt Engineering",
+            "Large Language Models (LLMs)",
+            "Generative AI"
+        ]
     }
 ]
