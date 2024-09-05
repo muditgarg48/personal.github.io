@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8bef24be.css",
-    "main.js": "/static/js/main.f9d0f5b0.js",
+    "main.js": "/static/js/main.33c60702.js",
     "static/js/686.95d55476.chunk.js": "/static/js/686.95d55476.chunk.js",
     "static/js/834.97ccc3c9.chunk.js": "/static/js/834.97ccc3c9.chunk.js",
     "static/js/328.01872358.chunk.js": "/static/js/328.01872358.chunk.js",
@@ -9,6 +9,7 @@
     "static/js/349.2da7a50d.chunk.js": "/static/js/349.2da7a50d.chunk.js",
     "static/js/794.3530a30f.chunk.js": "/static/js/794.3530a30f.chunk.js",
     "static/js/404.5f504cfd.chunk.js": "/static/js/404.5f504cfd.chunk.js",
+    "static/js/950.6e5d5b2f.chunk.js": "/static/js/950.6e5d5b2f.chunk.js",
     "static/js/352.0b6604f3.chunk.js": "/static/js/352.0b6604f3.chunk.js",
     "static/js/769.487537e0.chunk.js": "/static/js/769.487537e0.chunk.js",
     "static/js/34.b35b3344.chunk.js": "/static/js/34.b35b3344.chunk.js",
@@ -24,6 +25,7 @@
     "static/media/Accenture Advanced Engineering Job Simulation.pdf": "/static/media/Accenture Advanced Engineering Job Simulation.fe5d1c76e24e39ff5329.pdf",
     "static/media/alfred_rag_chat.png": "/static/media/alfred_rag_chat.bbb2c1455b1434531a25.png",
     "static/media/Technical Support Fundamentals by Google.pdf": "/static/media/Technical Support Fundamentals by Google.83b6816172ee7c7fee75.pdf",
+    "static/media/Google AI Essentials.pdf": "/static/media/Google AI Essentials.448223515e8f44cc8192.pdf",
     "static/media/Learning C - with exam result.pdf": "/static/media/Learning C - with exam result.c67708398db27ea7af5a.pdf",
     "static/media/myself.jpg": "/static/media/myself.dd0369e3ad1f1e6b4522.jpg",
     "static/media/Programming Foundations of VCS with Git.pdf": "/static/media/Programming Foundations of VCS with Git.5f2bf5f2ea8dc9305e62.pdf",
@@ -42,10 +44,10 @@
     "static/media/Carpenter-Regular.woff2": "/static/media/Carpenter-Regular.044e38e83874148e0203.woff2",
     "index.html": "/index.html",
     "main.8bef24be.css.map": "/static/css/main.8bef24be.css.map",
-    "main.f9d0f5b0.js.map": "/static/js/main.f9d0f5b0.js.map"
+    "main.33c60702.js.map": "/static/js/main.33c60702.js.map"
   },
   "entrypoints": [
     "static/css/main.8bef24be.css",
-    "static/js/main.f9d0f5b0.js"
+    "static/js/main.33c60702.js"
   ]
 }
