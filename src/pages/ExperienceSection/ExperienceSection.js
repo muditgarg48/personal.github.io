@@ -72,16 +72,16 @@ const eachExperience = (experience) => {
             </div>
             <ul className="experience-desc">
                 {
-                    experience.desc.map((line) => (
-                        <li>{line}</li>
+                    experience.desc.map((line, index) => (
+                        <li key={index}>{line}</li>
                     ))
                 }
             </ul>
             &nbsp;
             <div className="experience-tech">
                 {
-                    experience.tech.map((tech) => (
-                        <div className="tech">{tech}</div>
+                    experience.tech.map((tech, index) => (
+                        <div className="tech" key={index}>{tech}</div>
                     ))
                 }
             </div>

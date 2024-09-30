@@ -63,8 +63,8 @@ const CertificatesSection = () => {
             <div id="certificates">
                 {
                     filteredCertificates.length > 0?
-                    filteredCertificates.map((certificate) => 
-                        <Certificate certificate={certificate}/>
+                    filteredCertificates.map((certificate, index) => 
+                        <Certificate certificate={certificate} key={index}/>
                 ):
                 <span>No certificates found!</span>
             }
@@ -111,9 +111,9 @@ const Certificate = ({certificate}) => {
     }, [certificate.file_name]);
     
     return (
-        <ReactCardFlip 
-            flipDirection="horizontal" 
-            isFlipped={isFlipped}
+        <ReactCardFlip
+        flipDirection="horizontal" 
+        isFlipped={isFlipped}
         >
             <CertificateFront 
                 certificate={certificate} 

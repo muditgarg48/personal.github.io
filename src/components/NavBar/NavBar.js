@@ -20,11 +20,11 @@ const NavBar =  () => {
     const certificates_icon = require('../../assets/icons/certificates.json');
 
     const NavBarItems = [
-        <NavBarItem content="HOME" dest="welcome-section" icon={home_icon}></NavBarItem>,
-        <NavBarItem content="ABOUT" dest="about-section" icon={about_icon}></NavBarItem>,
-        <NavBarItem content="EXPERIENCE" dest="experience-section" icon={experience_icon}></NavBarItem>,
-        <NavBarItem content="PROJECTS" dest="projects-section" icon={projects_icon}></NavBarItem>,
-        <NavBarItem content="CERTIFICATES" dest="certificates-section" icon={certificates_icon}></NavBarItem>,
+        <NavBarItem content="HOME" dest="welcome-section" icon={home_icon} key="HOME"></NavBarItem>,
+        <NavBarItem content="ABOUT" dest="about-section" icon={about_icon} key="ABOUT"></NavBarItem>,
+        <NavBarItem content="EXPERIENCES" dest="experience-section" icon={experience_icon} key="EXPERIENCES"></NavBarItem>,
+        <NavBarItem content="PROJECTS" dest="projects-section" icon={projects_icon} key="PROJECTS"></NavBarItem>,
+        <NavBarItem content="CERTIFICATES" dest="certificates-section" icon={certificates_icon} key="CERTIFICATES"></NavBarItem>,
     ];
 
     if(size.width < 1000)
