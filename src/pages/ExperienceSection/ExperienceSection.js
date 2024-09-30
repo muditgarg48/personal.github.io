@@ -8,63 +8,98 @@ const ExperienceSection = () => {
 
     const [expIndex, setExpIndex] = useState(0);
 
-    const highlightedExpCSS = {
-        border: "3px solid var(--font-primary-color)"
-    };
-
     return (
         <div id="experience-section">
             <SectionHeading section_name="EXPERIENCES"/>
             <div id="experience-logos">
                 {
-                    experience_data.map((experience, index) => {
-                        const link = "https://cdn.brandfetch.io/"+experience.domain;
-                        return(
-                            <div className="experience-logo" onClick={() => setExpIndex(index)} >
-                                <img 
-                                    src={link} 
-                                    alt={experience.name} 
-                                    key={index} 
-                                    style={index === expIndex? highlightedExpCSS: null}
-                                ></img>
-                            </div>
-                        );
-                    })
+                    experience_data.map((experience, index) => eachExperienceLogo(experience, index, expIndex, setExpIndex))
+                }
+                {
+                    eachExperienceLogo({}, -1,expIndex, setExpIndex, true)
                 }
             </div>
-            <div id="experience-details">
-                <div className="experience-headline">
-                    <h3>
-                        {experience_data[expIndex].role}
-                        &nbsp; 
-                        <span className="experience-company">
-                            @
-                            &nbsp;
-                            <a href={experience_data[expIndex].website} target="_blank" rel="noreferrer">
-                                {experience_data[expIndex].name}
-                            </a>
-                        </span>
-                    </h3>
-                    <div className="experience-period">
-                        <span>{experience_data[expIndex].start}</span> - <span>{experience_data[expIndex].end}</span>
-                    </div>
-                </div>
-                <ul className="experience-desc">
-                    {
-                        experience_data[expIndex].desc.map((line) => (
-                            <li>{line}</li>
-                        ))
-                    }
-                </ul>
-                &nbsp;
-                <div className="experience-tech">
-                    {
-                        experience_data[expIndex].tech.map((tech) => (
-                            <div className="tech">{tech}</div>
-                        ))
-                    }
+            <div id="experience_details">
+            {
+                expIndex !== -1?
+                eachExperience(experience_data[expIndex]):
+                finalExperience()
+            }
+            </div>
+        </div>
+    );
+}
+
+const eachExperienceLogo = (experience, index, expIndex, setExpIndex, isDefault=false) => {
+    if (isDefault) {
+        experience["name"]  = "Keep Learning";
+        experience["domain"] = "questionmark.com";
+    }
+    const link = "https://cdn.brandfetch.io/"+experience.domain;
+    const highlightedExpCSS = {
+        border: "3px solid var(--font-primary-color)"
+    };
+    return(
+        <div className="experience-logo" onClick={() => setExpIndex(index)} key={index}>
+            <img 
+                src={link} 
+                alt={experience.name} 
+                key={index} 
+                style={index === expIndex? highlightedExpCSS: null}
+            ></img>
+        </div>
+    );
+}
+
+const eachExperience = (experience) => {
+    return (
+        <>
+            <div className="experience-headline">
+                <h3>
+                    {experience.role}
+                    &nbsp; 
+                    <span className="experience-company">
+                        @
+                        &nbsp;
+                        <a href={experience.website} target="_blank" rel="noreferrer">
+                            {experience.name}
+                        </a>
+                    </span>
+                </h3>
+                <div className="experience-period">
+                    <span>{experience.start}</span> - <span>{experience.end}</span>
                 </div>
             </div>
+            <ul className="experience-desc">
+                {
+                    experience.desc.map((line) => (
+                        <li>{line}</li>
+                    ))
+                }
+            </ul>
+            &nbsp;
+            <div className="experience-tech">
+                {
+                    experience.tech.map((tech) => (
+                        <div className="tech">{tech}</div>
+                    ))
+                }
+            </div>
+        </>
+    );
+}
+
+const finalExperience = () => {
+    return (
+        <div id="experience-details" key={-1}>
+            <h3>Keep Learning</h3>
+            &nbsp;
+            <ul className="experience-desc">
+                <li>Open to learning new technologies and frameworks.</li>
+                <li>Highly collaborative spirit with eagerness to help others.</li>
+                <li>Particular focus on tackling corner scenarios and responsive design.</li>
+                <li>Committed to making small issues matter even less.</li>
+            </ul>
         </div>
     );
 }

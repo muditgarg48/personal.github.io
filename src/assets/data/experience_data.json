@@ -16,34 +16,15 @@
             "Java",
             "Springboot",
             "Maven",
+            "IntelliJ IDEA",
+            "Docker",
             "Kubernetes",
             "Azure DevOps",
             "Agile",
             "Scrum",
+            "SDLC",
             "Microsoft Power BI",
             "MySQL"
-        ]
-    },
-    {
-        "name": "Your Company",
-        "domain": "questionmark.com",
-        "website": "",
-        "role": "Software Engineer",
-        "desc": [
-            "Open to learning new technologies and frameworks.",
-            "Highly collaborative spirit with eagerness to help others.",
-            "Particular focus on tackling corner scenarios and responsive design.",
-            "Committed to making small issues matter even less."
-        ],
-        "start": "Very Soon",
-        "end": "Future",
-        "tech": [
-            "Always",
-            "Open",
-            "To",
-            "Learn",
-            "And",
-            "Grow"
         ]
     }
 ]
