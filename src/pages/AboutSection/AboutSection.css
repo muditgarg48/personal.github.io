@@ -66,11 +66,6 @@
     font-size: 2rem;
 }
 
-.subsection-heading {
-    font-size: 2rem;
-    padding: 1rem;
-}
-
 .single_skill {
     padding: 0.5rem;
     margin: 1rem;
@@ -90,9 +85,4 @@
 
 .single_skill:hover {
     transform: translateY(-10%);
-}
-
-#education-subsection {
-    width: 100%;
-    height: fit-content;
 }

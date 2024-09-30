@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import './AboutSection.css';
 import { TypeAnimation } from "react-type-animation";
 import Marquee from "react-fast-marquee";
-import { Chrono } from "react-chrono";
 
 import ScrollFurther from "../../components/ScrollFurther/ScrollFurther";
 import SectionHeading from "../../components/SectionHeading/SectionHeading.js";
+import EducationSection from "../EducationSection/EducationSection.js";
 import myself from '../../assets/imgs/myself.jpg';
 
 const AboutSection = () => {
@@ -44,49 +44,6 @@ const AboutSection = () => {
                 <EducationSection/>
                 &nbsp;
             </div>
-        </div>
-    );
-}
-
-const EducationSection = () => {
-
-    const themeSettings = {
-        primary: 'var(--font-primary-color)',
-        secondary: 'var(--font-highlight-color)',
-        cardBgColor: 'var(--font-secondary-color)',
-        cardDetailsBgColor: 'transparent',
-        cardMediaBgColor: 'transparent',
-        cardDetailsColor: 'var(--font-highlight-color)',
-        cardSubtitleColor: 'var(--font-highlight-color)',
-        cardTitleColor: 'var(--font-highlight-color)',
-        titleColor: 'var(--font-highlight-color)',
-        toolbarBgColor: 'var(--bg-color)',
-        toolbarBtnBgColor: 'var(--secondary-color)',
-        toolbarTextColor: 'var(--font-highlight-color)',
-        nestedCardBgColor: 'var(--font-secondary-color)',
-        nestedCardTitleColor: 'var(--font-highlight-color)'
-    };
-    const mediaSettings = {
-        fit:'contain'
-    };
-
-    const education_history = require('../../assets/data/education_history.json');
-
-    return (
-        <div id="education-subsection">
-            <div className="subsection-heading">
-                Education History
-            </div>
-            &nbsp;
-            <Chrono 
-                mode="VERTICAL"
-                mediaSettings={mediaSettings}
-                slideShow
-                slideItemDuration={3000}
-                slideShowType="slide_from_sides"
-                items={education_history}
-                theme={themeSettings}
-            />
         </div>
     );
 }
