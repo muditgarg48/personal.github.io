@@ -76,6 +76,7 @@
     margin: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 100%;
     transition: all 0.1s;
     transform: none;

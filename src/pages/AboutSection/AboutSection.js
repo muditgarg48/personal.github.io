@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './AboutSection.css';
 import { TypeAnimation } from "react-type-animation";
 import Marquee from "react-fast-marquee";
@@ -92,46 +92,35 @@ const EducationSection = () => {
 }
 
 const SkillSection = () => {
+    const skills = require('../../assets/data/skills.json');
     return (
         <div id="skills-subsection">
             {/* <div class="subsection-heading">
                 My Skillset
             </div> */}
-            <SkillSubSection
-                id="lang-skills"
-                section_name="Programming Languages"
-                dir="left"/> 
-            <SkillSubSection
-                id="web-dev-skills"
-                section_name="Web Development"
-                dir="right"/>
-            <SkillSubSection
-                id="mobile-dev-skills"
-                section_name="Mobile Development"
-                dir="left"/>
-            <SkillSubSection
-                id="tools-skills"
-                section_name="Tools and Libraries"
-                dir="right"/>
-            <SkillSubSection
-                id="ide-skills"
-                section_name="Integrated Development Environments (IDE)"
-                dir="left"/>
+            {
+                Object.keys(skills).map((key, index) => {
+                    return (
+                        <SkillSubSection
+                            key={index}
+                            skills={skills[key]}
+                            section_name={key}
+                            dir={index%2===0?"right":"left"}/>
+                    );
+                })
+            }
         </div>
     );
 }
 
-const SkillSubSection = ({id, section_name, dir}) => {
-
-    const skills = require('../../assets/data/skills.json');
-
+const SkillSubSection = ({id, skills, section_name,dir}) => {
     return (
         <div id={id} className="skill_subsection">
             <div style={{display: "flex", justifyContent: "center"}}>{section_name}</div>
             <Marquee pauseOnHover speed={70} direction={dir}>
                 {
-                    skills[section_name].map((skill) => 
-                        <Skill icon={skill.icon} alt={skill.name} key={skill.name}/>
+                    skills.map((skill) => 
+                        <Skill icon={skill.icon} name={skill.name} key={skill.name}/>
                     )
                 }
             </Marquee>
@@ -139,11 +128,16 @@ const SkillSubSection = ({id, section_name, dir}) => {
     );
 }
 
-const Skill = ({icon=null, alt='', name=''}) => {
+const Skill = ({icon=null, name=''}) => {
+
+    const [showName, setShowName] = useState(false);
 
     return (
-        <div className="single_skill">
-            <img src={icon} alt={alt}></img>
+        <div className="single_skill" onMouseEnter={()=>setShowName(true)} onMouseLeave={()=>setShowName(false)}>
+            <img src={icon} alt={name}></img>
+            &nbsp;
+            {showName && <>{name}</>}
+            {!showName && <>&nbsp;</>}
         </div>
     );
 }
