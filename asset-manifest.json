@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8bef24be.css",
-    "main.js": "/static/js/main.33c60702.js",
+    "main.css": "/static/css/main.741551c8.css",
+    "main.js": "/static/js/main.24913c74.js",
     "static/js/686.95d55476.chunk.js": "/static/js/686.95d55476.chunk.js",
     "static/js/834.97ccc3c9.chunk.js": "/static/js/834.97ccc3c9.chunk.js",
     "static/js/328.01872358.chunk.js": "/static/js/328.01872358.chunk.js",
@@ -34,20 +34,20 @@
     "static/media/Learning GitLab.pdf": "/static/media/Learning GitLab.0cf95668c301c297ceb3.pdf",
     "static/media/Debugging C Code.pdf": "/static/media/Debugging C Code.4757237e12085f5cb0c2.pdf",
     "static/media/portfolio_react_app.png": "/static/media/portfolio_react_app.d1594e3aff7777ff8f60.png",
-    "static/media/My Resume.pdf": "/static/media/My Resume.d3f7aa3b776114255d0e.pdf",
     "static/media/JPMC Virtual Internship.pdf": "/static/media/JPMC Virtual Internship.86bea7abeaa07fe2cebc.pdf",
     "static/media/Career Essentials in Generative AI by Microsoft and LinkedIn.pdf": "/static/media/Career Essentials in Generative AI by Microsoft and LinkedIn.6e533a51868604444b65.pdf",
+    "static/media/My Resume.pdf": "/static/media/My Resume.f6f58718facb4aa0dc57.pdf",
     "static/media/gesture_based_device_control.png": "/static/media/gesture_based_device_control.a3fbd3fb4164599e544f.png",
     "static/media/Carpenter-Regular.eot": "/static/media/Carpenter-Regular.ce9705fc89e5238e0da2.eot",
     "static/media/Carpenter-Regular.ttf": "/static/media/Carpenter-Regular.eca4d45a6c85e181130e.ttf",
     "static/media/Carpenter-Regular.woff": "/static/media/Carpenter-Regular.78d87bd02ad1f539d9f8.woff",
     "static/media/Carpenter-Regular.woff2": "/static/media/Carpenter-Regular.044e38e83874148e0203.woff2",
     "index.html": "/index.html",
-    "main.8bef24be.css.map": "/static/css/main.8bef24be.css.map",
-    "main.33c60702.js.map": "/static/js/main.33c60702.js.map"
+    "main.741551c8.css.map": "/static/css/main.741551c8.css.map",
+    "main.24913c74.js.map": "/static/js/main.24913c74.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bef24be.css",
-    "static/js/main.33c60702.js"
+    "static/css/main.741551c8.css",
+    "static/js/main.24913c74.js"
   ]
 }
