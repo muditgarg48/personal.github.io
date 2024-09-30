@@ -18,17 +18,51 @@ const AboutSection = () => {
                         className="about_me"
                         style={{ whiteSpace: 'pre-line', display: 'block' }}
                         speed={100}
+                        cursor={false}
                         sequence={[
-                            `Hi there! My name is Mudit Garg. I am an upcoming Software Engineer who is passionate about creating projects that solve various small yet significant problems we usually face in our daily lives. With an aspiration to learn and practically apply new ways to do stuff, I am proficient in many languages and frameworks but currently still involved in learning something new.
-
-                            Currently, my main focus has been to learning new technologies, particularly understanding how LLMs and Generative AI work.
-
-                            I have also recently completed the OCI Generative AI Certification from Oracle.`,
-                            1000,
+                            `As an upcoming Software Engineer, I am passionate about building efficient and scalable solutions that measurably improve business outcomes, while also adopting a growth mindset and willingness to learn anything that makes me a better engineer. I have a proven track record of producing such improvements, both as an individual contributor and as a team collaborator. Due to my passion for my field, I have a strong work ethic which makes me a valuable asset to every team I join. I consistently strive toward perfection and always keep my codebase clean, readable, and modular. What I lack in experience, I make up in my industry-standard project work with a properly structured, modular codebase and well-documented repository.`,
+                            500
                         ]}
-                        repeat={1}
+                        repeat={0}
                     />
-                    &nbsp;
+                    <div>
+                        <h3>Currently,</h3>
+                        <ul>
+                            <li>
+                                <u>Exploring opportunities to learn and grow</u> as a professional Software Engineer based in Dublin, Ireland.
+                            </li>
+                            <li>
+                                Researching about <u>decentralised networks</u> and <u>Web 3</u> technologies.
+                            </li>
+                            <li>
+                                Grasping and adopting the use of <u>Golang</u> and its ecosystem.
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Recently concluded</h3>
+                        <ul>
+                            <li>
+                                <u>My postgraduation</u> from Trinity College Dublin in 2024.
+                            </li>
+                            <li>
+                                Exploration of Generative AI. First gained a solid theoretical background of how <u>LLMs and Generative AI</u> work using <u>Microsoft's Career Essentials in Generative AI</u>. Then gained some practical knowledge using <u>Oracle OCI Generative AI Certification</u>, diving into further depths and learning about <u>RAG systems</u> and their application. Then explored the ethics and concerns surrounding the use of Generative AI with the help of <u>Google's AI Essentials</u> course.
+                            </li>
+                            <li>
+                                Solidification of the acquired knowledge on LLMs, RAG systems and Generative AI by implementation of a personal chatbot named <a href="#chatbot-section" style={{color: 'white'}}>A.L.F.R.E.D.</a> at the end of my portfolio website to provide human-like responses to queries about my professional background.
+                            </li>
+                        </ul>
+                    </div>
+                    <TypeAnimation
+                        className="about_me"
+                        style={{ whiteSpace: 'pre-line', display: 'block' }}
+                        speed={100}
+                        sequence={[
+                            2500,
+                            `I am always eager to collaborate on solving problems and contributing to the growth of a cause. Feel free to contact me via LinkedIn or email.`,
+                        ]}
+                        repeat={0}
+                    />
                 </div>
                 <div id="myself-subsection">
                     <img id="my-potrait" src={myself} alt="My Potrait"/>
