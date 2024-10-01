@@ -32,7 +32,14 @@ const AboutSection = () => {
                                 <u>Exploring opportunities to learn and grow</u> as a professional Software Engineer based in Dublin, Ireland.
                             </li>
                             <li>
-                                Researching about <u>decentralised networks</u> and <u>Web 3</u> technologies.
+                                Researching about <u>DevOps</u> and enhancing expertise in related tools and methodologies including:
+                                <ul>
+                                    <li>Docker</li>
+                                    <li>Kubernetes</li>
+                                    <li>Git</li>
+                                    <li>CI/CD</li>
+                                    <li>Telemetry</li>
+                                </ul>
                             </li>
                             <li>
                                 Grasping and adopting the use of <u>Golang</u> and its ecosystem.
