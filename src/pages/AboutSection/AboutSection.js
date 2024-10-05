@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './AboutSection.css';
 import { TypeAnimation } from "react-type-animation";
 import Marquee from "react-fast-marquee";
+import { Ribbon, RibbonContainer,  RightCornerRibbon } from "react-ribbons";
 
 import ScrollFurther from "../../components/ScrollFurther/ScrollFurther";
 import SectionHeading from "../../components/SectionHeading/SectionHeading.js";
@@ -79,6 +80,14 @@ const AboutSection = () => {
                     </div>
                 </div>
                 &nbsp;
+                <div style={{display: "flex", justifyContent: "end"}}>
+                    <span>⚒️ - Professional Experience</span>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    <span>⭐ - Proficient Experience</span>
+                </div>
+                &nbsp;
                 <SkillSection/>
                 &nbsp;
                 <ScrollFurther next="experience-section" side="right"/>
@@ -117,9 +126,28 @@ const SkillSubSection = ({id, skills, section_name,dir}) => {
             <div style={{display: "flex", justifyContent: "center"}}>{section_name}</div>
             <Marquee pauseOnHover speed={70} direction={dir}>
                 {
-                    skills.map((skill) => 
-                        <Skill icon={skill.icon} name={skill.name} key={skill.name}/>
-                    )
+                    skills.map((skill) => {
+                        if ("ribbon" in skill) {
+                            return (
+                                <RibbonContainer>
+                                    <Ribbon
+                                        side="right"
+                                        type="edge"
+                                        size="normal"
+                                        backgroundColor="transparent"
+                                        withStripes={false}
+                                    >
+                                        {skill.ribbon}
+                                    </Ribbon>
+                                    <Skill icon={skill.icon} name={skill.name} key={skill.name}/>
+                                </RibbonContainer>
+                            );
+                        } else {
+                            return (
+                                <Skill icon={skill.icon} name={skill.name} key={skill.name}/>
+                            );
+                        }
+                    })
                 }
             </Marquee>
         </div>
