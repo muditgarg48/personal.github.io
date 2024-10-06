@@ -81,11 +81,11 @@ const AboutSection = () => {
                 </div>
                 &nbsp;
                 <div style={{display: "flex", justifyContent: "end"}}>
-                    <span>⚒️ - Professional Experience</span>
+                    <span>⚒️ - Professional</span>
                     &nbsp;
                     &nbsp;
                     &nbsp;
-                    <span>⭐ - Proficient Experience</span>
+                    <span>⭐ - Proficient</span>
                 </div>
                 &nbsp;
                 <SkillSection/>
