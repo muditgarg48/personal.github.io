@@ -6,6 +6,7 @@ import { Ribbon, RibbonContainer,  RightCornerRibbon } from "react-ribbons";
 
 import ScrollFurther from "../../components/ScrollFurther/ScrollFurther";
 import SectionHeading from "../../components/SectionHeading/SectionHeading.js";
+import AnimatedIcon from "../../components/AnimatedIcon/AnimatedIcon";
 import EducationSection from "../EducationSection/EducationSection.js";
 import myself from '../../assets/imgs/myself.jpg';
 
@@ -91,8 +92,36 @@ const AboutSection = () => {
                 <SkillSection/>
                 &nbsp;
                 <ScrollFurther next="experience-section" side="right"/>
+                &nbsp;
+                <DidYouKnowSection/>
                 <EducationSection/>
                 &nbsp;
+            </div>
+        </div>
+    );
+}
+
+const DidYouKnowSection = () => {
+    const did_you_know_icon = require('../../assets/icons/interesting.json');
+    const facts = require('../../assets/data/facts_data.json');
+    const [randomFactIndex, setRandomFactIndex] = useState(0);
+    
+    const generateRandomNumber = () => {
+        const randomNumber = Math.floor(Math.random() * facts.length);
+        setRandomFactIndex(randomNumber)
+    }
+    
+    return (
+        <div id="did-you-know-subsection">
+            <div id="dyk-heading-section">
+                <h3 id="dyk-heading">
+                    <AnimatedIcon icon={did_you_know_icon} link=""/>
+                    DID YOU KNOW
+                </h3>
+                <div id="refresh-dyk" onClick={generateRandomNumber}>Refresh</div>
+            </div>
+            <div id="did-you-know">
+               {facts[randomFactIndex]}
             </div>
         </div>
     );

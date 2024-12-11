@@ -86,3 +86,50 @@
 .single_skill:hover {
     transform: translateY(-10%);
 }
+
+#did-you-know-subsection {
+    padding: 1rem;
+    /* border-radius: 30px;
+    border: 1px solid var(--font-secondary-color); */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+}
+
+#dyk-heading-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#dyk-heading {
+    color: var(--font-secondary-color);
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#did-you-know {
+    flex: 4;
+    font-size: larger;
+    padding: 10px 0;
+    text-align: justify;
+}
+
+#refresh-dyk {
+    flex: 1;
+    transition: all 0.1s;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    color: var(--font-secondary-color);
+}
+
+#refresh-dyk:hover {
+    cursor: pointer;
+    font-weight: bolder;
+    color: var(--font-primary-color);
+}
