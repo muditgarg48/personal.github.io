@@ -8,7 +8,7 @@ import SectionHeading from '../../components/SectionHeading/SectionHeading';
 function ChatbotSection() {
 
   // const deployment = "https://self-rag-system.onrender.com"
-  const deployment = "https://self-rag-system-production.up.railway.app";
+  const deployment = "https://self-rag-system.onrender.com";
 
   const initMessage = {
     person: "alfred",
